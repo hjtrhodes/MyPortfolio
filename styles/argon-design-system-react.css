@@ -16685,6 +16685,12 @@ textarea[resize="horizontal"] {
 	font-size: 1rem;
 }
 
+.focus-ring:focus {
+	border-color: #4ca1af;
+	box-shadow: 0 0 0 0.8rem rgba(76, 161, 175, 0.5); /* Increased blur-radius value */
+	outline: none;
+}
+
 .has-success,
 .has-danger {
 	position: relative;

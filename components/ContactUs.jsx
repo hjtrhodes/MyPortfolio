@@ -87,7 +87,7 @@ export const ContactUs = () => {
                       Your project is very important to me.
                     </p>
                     <FormGroup className={classnames("mt-5", {})}>
-                      <InputGroup className="input-group-alternative">
+                      <InputGroup className="input-group-alternative-focus-ring">
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
                             <i className="ni ni-user-run" />
@@ -102,7 +102,7 @@ export const ContactUs = () => {
                       </InputGroup>
                     </FormGroup>
                     <FormGroup className={classnames({})}>
-                      <InputGroup className="input-group-alternative">
+                      <InputGroup className="input-group-alternative-focus-ring">
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
                             <i className="ni ni-email-83" />
@@ -118,7 +118,7 @@ export const ContactUs = () => {
                     </FormGroup>
                     <FormGroup className="mb-4">
                       <Input
-                        className="form-control-alternative"
+                        className="form-control-alternative-focus-ring"
                         cols="80"
                         name="user_message"
                         placeholder="Type a message..."
