@@ -20,12 +20,12 @@ export default function Home({ githubProfileData }) {
       <SEO />
       <Navigation />
       <Greetings />
-      <Skills />
+      {/* <Skills />
       <Education />
-      <Experience />
+      <Experience /> */}
       <Contact />
-      <Feedbacks />
-      <Projects />
+      {/* <Feedbacks /> */}
+      {/* <Projects /> */}
       <GithubProfileCard prof={githubProfileData} />
     </div>
   );
