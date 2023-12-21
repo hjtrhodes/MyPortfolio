@@ -35,18 +35,19 @@ const Greetings = () => {
                   <h1 className="display-3 text-white">
                     {greetings.title + " "}
                   </h1>
-                  <p className="lead text-white">{greetings.description}</p>
+                    <p className="lead text-white">{greetings.intro}</p>
+                    <p className="lead text-white">{greetings.technologies}</p>
                   <SocialLinks />
                   <div className="btn-wrapper my-4">
                     <Button
                       className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                       color="default"
-                      href={greetings.resumeLink}
+                      href={greetings.CVLink}
                     >
                       <span className="btn-inner--icon mr-1">
                         <i className="fa fa-file" />
                       </span>
-                      <span className="btn-inner--text">See My Resume</span>
+                      <span className="btn-inner--text">Click to see my CV</span>
                     </Button>
                   </div>
                 </Col>

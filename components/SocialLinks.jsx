@@ -7,17 +7,18 @@ import { socialLinks } from "../portfolio";
 const SocialLinks = () => {
 	return (
 		<div className="btn-wrapper text-lg">
-			{socialLinks.url && (
+			{socialLinks.gmail && (
 				<Button
-					className="btn-icon-only rounded-circle ml-1"
-					color="white"
+					className="btn-icon-only rounded-circle ml-1 bg-white"
+					color="gmail"
+					href={socialLinks.gmail}
 					rel="noopener"
-					aria-label="URL"
-					href={socialLinks.url}
+					aria-label="Gmail"
 					target="_blank"
+					onClick={() => window.location.href = 'mailto:hjtrhodes@gmail.com'}
 				>
 					<span className="btn-inner--icon">
-						<i className="fa fa-link" />
+						<i className="fa fa-envelope" />
 					</span>
 				</Button>
 			)}
@@ -46,48 +47,6 @@ const SocialLinks = () => {
 				>
 					<span className="btn-inner--icon">
 						<i className="fa fa-github" />
-					</span>
-				</Button>
-			)}
-			{socialLinks.instagram && (
-				<Button
-					className="btn-icon-only rounded-circle ml-1"
-					color="instagram"
-					href={socialLinks.instagram}
-					target="_blank"
-					rel="noopener"
-					aria-label="Instagram"
-				>
-					<span className="btn-inner--icon">
-						<i className="fa fa-instagram" />
-					</span>
-				</Button>
-			)}
-			{socialLinks.facebook && (
-				<Button
-					className="btn-icon-only rounded-circle ml-1"
-					color="facebook"
-					href={socialLinks.facebook}
-					target="_blank"
-					rel="noopener"
-					aria-label="Facebook"
-				>
-					<span className="btn-inner--icon">
-						<i className="fa fa-facebook-square" />
-					</span>
-				</Button>
-			)}	
-			{socialLinks.twitter && (
-				<Button
-					className="btn-icon-only rounded-circle"
-					color="twitter"
-					href={socialLinks.twitter}
-					target="_blank"
-					rel="noopener"
-					aria-label="Twitter"
-				>
-					<span className="btn-inner--icon">
-						<i className="fa fa-twitter" />
 					</span>
 				</Button>
 			)}

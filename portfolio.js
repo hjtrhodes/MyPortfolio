@@ -1,26 +1,24 @@
 import emoji from "react-easy-emoji";
+import Logo from "./public/img/icons/common/Logo.png"
 
 export const greetings = {
-  name: "Brendan Glancy",
-  title: "Welcome.",
-  description:
-    "I am Student / Software Developer, learning Full Stack Web Development and Cyber Security. I have experience building Applications with Vanilla JavaScript, React,  Vue,  Node,  Java,  Spring Boot, Python,  Django and some other cool libraries and frameworks.",
-  resumeLink: "https://brendanglancy.github.io/Resume/",
+  name: "Harry Rhodes",
+  title: "Welcome to my Portfolio",
+  intro: "Hi, I'm Harry. I'm a Software Developer learning Full Stack Web Development with Makers. I love understanding how things work, problem-solving and I love learning! I'm a proud father, a lover of cycling and I'm addicted to chocolate digestives!",
+  technologies: "So far on my journey I have experience building applications with Vanilla JavaScript, React, Node, Python and Flask. I also have experience with SQL, Postgres and MongoDB as well as Jest, Cypress and Pytest for testing.",
+  CVLink: "https://docs.google.com/document/d/1WDQ-0gyIWZ4Quz8XPf9fVCJSYeT4G6iH9QUZh5Qx7nI/edit?usp=sharing",
 };
 
 export const openSource = {
-  githubUserName: "brendanglancy",
+  githubUserName: "hjtrhodes",
 };
 
 export const contact = {};
 
 export const socialLinks = {
-  url: "https://www.ovsknife.com/home",
-  instagram: "https://www.instagram.com/brendanglance/",
+  gmail: "gmail link",
   github: "https://github.com/brendanglancy",
   linkedin: "https://www.linkedin.com/in/brendan-glancy/",
-  discord: "https://www.hackerrank.com/Bglance68",
-  blog: "https://brendanglancy.github.io/",
 };
 
 export const skillsSection = {
@@ -231,24 +229,17 @@ export const feedbacks = [
 ];
 
 export const seoData = {
-  title: "Brendan's Portfolio",
-  description: "Full Stack Developer showcasing my work and experience.",
-  image: "https://avatars.githubusercontent.com/u/61941978?v=4",
-  url: "https://brendanglancy.software/",
+  title: "Harry's Portfolio",
+  description: "Software Developer showcasing my work.",
+  image: "public/img/icons/common/Logo.png",
+  url: "https://hrhodes.co.uk/",
   keywords: [
-    "Brendan Glancy",
+    "Harry Rhodes",
     "Portfolio",
     "Full Stack Developer",
+    "Software Developer",
     "Open to work",
-    "Ronis Hair Forum",
     "Developer",
     "web developer",
-    "Empyrial",
-    "OVS Grinding",
-    "OVS Knife Co.",
-    "Knifely",
-    "Canton Regional Chamber of Commerce",
-    "Akron",
-    "Ohio",
   ],
 };
