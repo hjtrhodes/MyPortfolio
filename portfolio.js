@@ -3,7 +3,7 @@ import emoji from "react-easy-emoji";
 export const greetings = {
   name: "Harry Rhodes",
   title: "Welcome to my Portfolio",
-  intro: "Hi, I'm Harry. I'm a Software Developer learning Full Stack Web Development with Makers. I love understanding how things work, problem-solving and learning! I'm a proud father, a lover of cycling and I'm addicted to chocolate digestives!",
+  intro: "Hi, I'm Harry. I'm a Software Developer and graduate from Makers course on Full Stack Web Development. I love understanding how things work, problem-solving and learning! I'm a proud father, a lover of cycling and I'm addicted to chocolate digestives!",
   technologies: "So far on my journey I have experience building applications with Vanilla JavaScript, React, Node, Python and Flask. I also have experience with SQL, Postgres and MongoDB as well as Jest, Cypress and Pytest for testing.",
   CVLink: "https://docs.google.com/document/d/1WDQ-0gyIWZ4Quz8XPf9fVCJSYeT4G6iH9QUZh5Qx7nI/edit?usp=sharing",
 };
@@ -143,21 +143,7 @@ export const educationInfo = [
       "The CIS - Programming degree option is designed to prepare students for careers in the field of software engineering and development.",
     ],
     github: "https://github.com/BrendanGlancy/akron/",
-  },
-  {
-    schoolName: "Tech Elevator",
-    subHeader: "Full Stack Development",
-    duration: "September 2020 - December 2020",
-    desc: "Programming Bootcamp to learn Full Stack Development",
-    descBullets: [
-      "  Object-Oriented Programming: Java",
-      "  Web Application Development: HTML, CSS, JavaScript, Vue.js, APIs using Spring Boot, Tomcat",
-      "  Database Programming: Spring JDBC/DAO, Table Design, SQL, PostgreSQL, E/R diagrams",
-      "  Completed 1000+ hours of Java, Spring, SQL, and JavaScript training",
-      "  Completed 100+ hours of pair programming on group projects",
-    ],
-    github: "https://github.com/BrendanGlancy/BreweryLocater",
-  },
+  }
 ];
 
 export const experience = [
