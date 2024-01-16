@@ -1,5 +1,4 @@
 # Workflow for building and deploying Next.js site to GitHub Pages
-
 name: Deploy Next.js site to Pages
 
 on:
@@ -62,6 +61,9 @@ jobs:
         with:
           node-version: "16"
           cache: 'yarn'
+      - name: Debug Artifacts
+        run: echo "Artifacts: ${{ toJson(needs.build.outputs.artifacts) }}"
+        needs: build
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
@@ -69,5 +71,6 @@ jobs:
           path: .
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
+
 
 
