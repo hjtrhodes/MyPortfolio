@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { greetings } from "../portfolio";
 import dynamic from "next/dynamic";
+import { FiFileText } from 'react-icons/fi';
+
 
 const ParticleBg = dynamic(() => import("particles-bg"), {
   ssr: false,
@@ -39,16 +41,16 @@ const Greetings = () => {
                     <p className="lead text-white">{greetings.technologies}</p>
                   <SocialLinks />
                   <div className="btn-wrapper my-4">
-                    <Button
-                      className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
-                      color="default"
-                      href={greetings.CVLink}
-                    >
-                      <span className="btn-inner--icon mr-1">
-                        <i className="fa fa-file" />
-                      </span>
-                      <span className="btn-inner--text">Click to see my CV</span>
-                    </Button>
+                        <Button
+                        className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
+                        color="default"
+                        href={greetings.CVLink}
+                      >
+                        <span className="btn-inner--icon mr-1">
+                          <FiFileText />
+                        </span>
+                        <span className="btn-inner--text">Click to see my CV</span>
+                      </Button>
                   </div>
                 </Col>
                 <Col lg="6">

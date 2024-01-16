@@ -52,7 +52,7 @@ const ExperienceCard = ({ data }) => {
 								{data.descBullets
 									? data.descBullets.map((desc) => {
 											return <li key={desc}>{desc}</li>;
-									  })
+									})
 									: null}
 							</ul>
 						</CardText>
