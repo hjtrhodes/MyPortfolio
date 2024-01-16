@@ -11,7 +11,7 @@ const Education = () => {
           <div className="d-flex px-3">
             <div>
               <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
-                <i className="ni ni-books text-info" />
+                <i className="ni ni-briefcase-24 text-info" />
               </div>
             </div>
             <div className="pl-4">
@@ -37,9 +37,10 @@ const Education = () => {
             x="0"
             y="0"
           >
-            <polygon className="fill-white" points="2560 0 2560 100 0 100" />
+            <polygon className="fill-white" points="" />
           </svg>
         </div>
+        <br />
       </section>
     )
   );

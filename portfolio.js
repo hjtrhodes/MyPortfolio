@@ -1,10 +1,12 @@
 import emoji from "react-easy-emoji";
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+
 
 export const greetings = {
   name: "Harry Rhodes",
-  title: "Welcome to my Portfolio",
-  intro: "Hi, I'm Harry. I'm a Software Developer and a graduate from Makers' Full Stack Software Development course. I love understanding how things work, problem-solving, and learning! I'm a proud father, a lover of cycling, and I'm addicted to chocolate digestives!",
-  technologies: "So far on my journey I have experience building applications with Vanilla JavaScript, React, Node, Python and Flask. I also have experience with SQL, Postgres and MongoDB as well as Jest, Cypress and Pytest for testing.",
+  title: "Welcome to my Portfolio.",
+  intro: "I'm a Software Developer and graduate from Makers' Full Stack Software Development course. I love understanding how things work, problem-solving and learning!",
+  technologies: "I'm a proud father, a lover of cycling and I'm addicted to chocolate digestives!",
   CVLink: "https://docs.google.com/document/d/1WDQ-0gyIWZ4Quz8XPf9fVCJSYeT4G6iH9QUZh5Qx7nI/edit?usp=sharing",
 };
 
@@ -21,66 +23,52 @@ export const socialLinks = {
 };
 
 export const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Technologies and Skills",
+  subTitle: "Below are the technologies I have experience with so far, but I always want to learn more! Currently I'm deepening my knowledge of React and starting to learn Typescript",
   data: [
     {
-      title: "Full Stack Development",
+      title: "",
       lottieAnimationFile: "/lottie/webdev.json", // Path of Lottie Animation JSON File
       skills: [
         emoji(
-          "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications.",
+          "⚡ Adept problem-solver."
         ),
         emoji(
-          "⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks.",
+          "⚡ Excellent communicator.",
         ),
         emoji(
-          "⚡ Cyber Security, HackTheBox Globally Ranked 534, Top 2% in PicoCTF 2022",
+          "⚡ Collaborative team worker.",
+        ),
+        emoji(
+          "⚡ Highly resourceful.",
+        ),
+        emoji(
+          "⚡ Consistently proactive.",
         ),
       ],
       softwareSkills: [
         {
-          skillName: "python",
+          skillName: "Python",
           fontAwesomeClassname: "logos:python",
-        },
-        {
-          skillName: "Java",
-          fontAwesomeClassname: "logos:java",
         },
         {
           skillName: "JavaScript",
           fontAwesomeClassname: "logos:javascript",
         },
         {
-          skillName: "cpp",
-          fontAwesomeClassname: "logos:c-plusplus",
-        },
-        {
-          skillName: "reactjs",
+          skillName: "React",
           fontAwesomeClassname: "vscode-icons:file-type-reactjs",
         },
         {
-          skillName: "vuejs",
-          fontAwesomeClassname: "logos:vue",
-        },
-        {
-          skillName: "nodejs",
+          skillName: "Nodejs",
           fontAwesomeClassname: "logos:nodejs-icon",
         },
         {
-          skillName: "astro",
-          fontAwesomeClassname: "vscode-icons:file-type-astro",
-        },
-        {
-          skillName: "npm",
+          skillName: "NPM",
           fontAwesomeClassname: "logos:npm-icon",
         },
         {
-          skillName: "php",
-          fontAwesomeClassname: "logos:php",
-        },
-        {
-          skillName: "yarn",
+          skillName: "Yarn",
           fontAwesomeClassname: "logos:yarn",
         },
         {
@@ -88,28 +76,40 @@ export const skillsSection = {
           fontAwesomeClassname: "logos:postgresql",
         },
         {
-          skillName: "MySQL-icon",
+          skillName: "MySQL",
           fontAwesomeClassname: "logos:mysql-icon",
-        },
-        {
-          skillName: "Vercel",
-          fontAwesomeClassname: "logos:vercel-icon",
-        },
-        {
-          skillName: "NextJS",
-          fontAwesomeClassname: "logos:nextjs-icon",
         },
         {
           skillName: "MongoDB",
           fontAwesomeClassname: "logos:mongodb-icon",
         },
         {
-          skillName: "Django",
-          fontAwesomeClassname: "logos:django-icon",
+          skillName: "HTML",
+          fontAwesomeClassname: "vscode-icons:file-type-html",
         },
         {
-          skillName: "spring-boot",
-          fontAwesomeClassname: "logos:spring-icon",
+          skillName: "CSS",
+          fontAwesomeClassname: "vscode-icons:file-type-css",
+        },
+        {
+          skillName: "Git",
+          fontAwesomeClassname: "vscode-icons:file-type-git",
+        },
+        {
+          skillName: "Tailwind",
+          fontAwesomeClassname: "vscode-icons:file-type-tailwind",
+        },
+        {
+          skillName: "Jest",
+          fontAwesomeClassname: "vscode-icons:file-type-jest",
+        },
+        {
+          skillName: "Cypress",
+          fontAwesomeClassname: "vscode-icons:file-type-cypress",
+        },
+        {
+          skillName: "Flask",
+          fontAwesomeClassname: "logos:flask",
         },
       ],
     },
@@ -133,70 +133,100 @@ export const SkillBars = [
 
 export const educationInfo = [
   {
-    schoolName: "Akron University",
-    subHeader: "Bachelor of Science in Computer Science",
-    duration: "August 2021 - Present",
-    grade: "3.8 GPA",
-    desc: "Programming CIS degree",
+    schoolName: "Professional:",
+    subHeader: "",
+    duration: "",
+    grade: "",
+    desc: "",
     descBullets: [
-      "The Bachelor of Science in Computer Information Systems (CIS) - Programming degree option allows students to attain knowledge of effective software application development, client/server application development, and database application development and management for businesses.",
-      "The CIS - Programming degree option is designed to prepare students for careers in the field of software engineering and development.",
+      "As an aspiring tech professional with a background as a primary teacher and year group leader, I bring a unique blend of creative, analytical and interpersonal skills as well as a passionate growth mindset to the world of technology.",
+      "After taking time to expose myself to basic programming in HTML, CSS and Python I realised how much I enjoyed the challenge of solving coding problems and mastering new ideas. As a result I made the exciting decision to pursue a career in Tech and completed the Makers Software Development bootcamp. It was there I was pleased to discover that abilities honed in my previous career, such as simplifying and breaking down concepts, collaborating with a team to pursue a shared goal and my desire to learn, have served me well when mastering the new technologies, programming languages, and development tools I have been exposed to.",
+      "In my new career I am looking for an opportunity to add value to a collaborative and innovative environment. I am excited to progress my skills by deepening my current knowledge base and challenging myself to learn even more new technologies."    ],
+    github: "https://github.com/hjtrhodes",
+  },
+  {
+    schoolName: "Personal",
+    subHeader: "",
+    duration: "",
+    grade: "",
+    desc: "",
+    descBullets: [
+      "I am a 33-year-old father to my adorable and lively son, Freddie, and husband to my wife, Madeleine. I live just outside Reading in a small town called Sonning Common but previously lived in Central London for ten years.", 
+      "Originally, I am from Jersey in the Channel Islands. I lived there for 21 years before I moved to London and I still have family and friends there who I try to visit as much as possible.",
+      "I love sports; running, cycling, Formula 1, rugby, and American football all find a place on my list of interests. Being a dedicated cyclist myself, I love exploring the countryside on my bike.",
+      "I have always enjoyed unraveling and understanding the workings of things, be it hardware or software. Whether it's DIY around the house or fixing motorbikes during my teenage years; I have always been a tinkerer, taking things apart, working out the problems and fixing them.", 
+      "This pleasure now extends to coding and I take great joy in consistently pushing myself to comprehend the logic, syntax, and deepen my knowledge of the challenge in front of me. I am incredibly excited to continue my professional journey and see how much more I can learn!"
     ],
-    github: "https://github.com/BrendanGlancy/akron/",
+    github: "https://github.com/hjtrhodes",
   }
 ];
 
 export const experience = [
   {
-    role: "Information Technology",
-    company: "Chamber of Commerce",
-    companylogo: "/img/icons/common/chamber.jpeg",
-    date: "June 2019 – Present",
+    role: "",
+    company: "Makers Academy",
+    companylogo: "/img/icons/common/Makers.jpeg",
+    date: "Sept 23' – Jan 24'",
     desc:
-      "Communicate with managers to set up computers used on in the office, Assess and troubleshoot computer problems brought by managers, faculty a. Maintain upkeep of computers, servers, and 20+ websites used by the Chamber and local businesses",
+      "Software Development Graduate",
   },
   {
-    role: "Software Developer Intern",
-    company: "OVS Knife Co.",
+    role: "",
+    company: "University of East London",
     companylogo: "/img/icons/common/ovs.png",
-    date: "December 2022",
-    descBullets: [
-      "  As a Software Developer Intern at OVS Knife Co, I am responsible for the development and maintenance of the company's web application. Utilizing my skills in Next.js, React, MongoDB, Node.js, Django, and Express.js.",
-      "  I work independently to implement new features, improve the overall user experience and make sure the platform is reliable and fast for our customers.",
-    ],
+    date: "Sept 16' – Aug 18'",
+    desc:
+    "Master of Arts in Education, Pass with Distinction",
   },
+  {
+    role: "",
+    company: "University of East London",
+    companylogo: "/img/icons/common/ovs.png",
+    date: "Sept 15' – Aug 15'",
+    desc:
+    "Postgraduate Certificate of Education",
+  },
+  {
+    role: "",
+    company: "University of Exeter",
+    companylogo: "/img/icons/common/chamber.jpeg",
+    date: "Sept 08' – Aug 11",
+    desc:
+      "Bachelor of Arts with Honours in Sociology, 2:1"  },
 ];
 
 export const projects = [
   {
-    name: "Ronis Hair Forum",
+    name: "Bald Bible",
     desc:
-      "Custom website for a local hair salon, Responsive Ready, Powered by Bootstrap 4, Dedicated portfolio and blog page, Easy Customization",
-    link: "https://ronishair.com/",
-    tags: ["Java", "VueJS", "PostgreSQL"],
+      "A fullstack Pinterest-style hair Loss positivity website to help people accept the change rather than use prevention products. Functionality includes Cloudinary image feed/upload, responsive feed page, likes and comments.",
+    github: "https://github.com/hjtrhodes/baldbibleHR",
+    link: "",
+    tags: ["MERN", "MongoDB", "React", "Node", "Express"],
   },
   {
-    name: "Empyrial",
+    name: "Acebook",
     desc:
-      "Contributor on Empyrial, Empyrial is a Python-based open-source quantitative investment library dedicated to financial institutions and retail investors, officially released in March 2021. Already used by thousands of people working in the finance industry, Empyrial aims to become an all-in-one platform for portfolio management, analysis, and optimization.",
-    github: "https://github.com/ssantoshp/Empyrial",
-    link: "https://ssantoshp.github.io/Empyrial/",
-    tags: ["python", "finace", "machine learning"],
+      "A fullstack Facebook clone made from a starter codebase. Includes posts, newsfeed, profile page, likes, comments, search, image uploads. Built in a collaborative team in 2 weeks using AGILE methodology.",
+    github: "https://github.com/hjtrhodes/Acebook-my-version",
+    link: "",
+    tags: ["MERN", "MongoDB", "React", "Node", "Express"],
   },
   {
-    name: "Knifely",
+    name: "MekersBnB",
     desc:
-      "Professional Knife Sharpening site for our company. Made with Tailwind CSS, Gatsby v3, and NextJS. Looking for a reliable and professional residential knife sharpening service in Akron? Look no further than Knifely!",
-    github: "https://github.com/OVS-Knife",
-    link: "https://www.knifely.com/",
-    tags: ["NextJS", "Gatsby", "JavaScript"],
+      "An AirBnB clone made from a starter codebase. Includes login, signup, sessions, user spaces, book a space with calendar. Built in a collaborative team in 1 week using AGILE methodology.",
+    github: "https://github.com/hjtrhodes/MakersBNBPersonal",
+    link: "",
+    tags: ["Python", "Flask", "SQL", "Postgres", "Pytest"],
   },
   {
-    name: "OVS Knife Co.",
+    name: "Rock, Paper, Scissors",
     desc:
-      "As a Software Developer Intern at OVS Knife Co, I am responsible for the development and maintenance of the company's web application. Utilizing my skills in Next.js, React, MongoDB, Node.js, Django, and Express.js, I work independently to implement new features, improve the overall user experience and make sure the platform is reliable and fast for our customers.",
-    link: "https://ovsknife.com/home",
-    tags: ["Intern", "Full Stack", "E-Commerce"],
+      "This was a small personal project and deployment I made to practise using React components, state, props, passing state and props between components, rules matrixes and conditional rendering. The base of this project was Vite.",
+      github: "https://github.com/hjtrhodes/RockPaperScissorReact",
+      link: "https://rockpaperscissors-tt4y.onrender.com/",
+    tags: ["React", "Props", "State"],
   },
 ];
 
