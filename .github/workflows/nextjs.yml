@@ -62,8 +62,8 @@ jobs:
           node-version: "16"
           cache: 'yarn'
       - name: Debug Artifacts
-        run: echo "Artifacts: ${{ toJson(needs.build.outputs.artifacts) }}"
-        needs: build
+        run: |
+          echo "Artifacts: ${{ runner.artifacts }}"
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
@@ -71,6 +71,7 @@ jobs:
           path: .
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
+
 
 
 
