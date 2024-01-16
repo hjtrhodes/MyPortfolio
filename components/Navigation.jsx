@@ -119,7 +119,7 @@ return (
                     href={socialLinks.github}
                     target="_blank"
                     >
-                    <i><FaGithub /></i>
+                    <i style={{ fontSize: '24px' }}><FaGithub /></i>
                     <span className="nav-link-inner--text d-lg-none ml-2">
                         Github
                     </span>
@@ -135,7 +135,7 @@ return (
                     href={socialLinks.linkedin}
                     target="_blank"
                     >
-                    <i><FaLinkedin /></i>
+                    <i style={{ fontSize: '24px' }}><FaLinkedin /></i>
                     <span className="nav-link-inner--text d-lg-none ml-2">
                         Linkedin
                     </span>
