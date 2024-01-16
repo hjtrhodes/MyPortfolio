@@ -3,7 +3,7 @@ import emoji from "react-easy-emoji";
 export const greetings = {
   name: "Harry Rhodes",
   title: "Welcome to my Portfolio",
-  intro: "Hi, I'm Harry. I'm a Software Developer and graduate from Makers course on Full Stack Web Development. I love understanding how things work, problem-solving and learning! I'm a proud father, a lover of cycling and I'm addicted to chocolate digestives!",
+  intro: "Hi, I'm Harry. I'm a Software Developer and a graduate from Makers' Full Stack Software Development course. I love understanding how things work, problem-solving, and learning! I'm a proud father, a lover of cycling, and I'm addicted to chocolate digestives!",
   technologies: "So far on my journey I have experience building applications with Vanilla JavaScript, React, Node, Python and Flask. I also have experience with SQL, Postgres and MongoDB as well as Jest, Cypress and Pytest for testing.",
   CVLink: "https://docs.google.com/document/d/1WDQ-0gyIWZ4Quz8XPf9fVCJSYeT4G6iH9QUZh5Qx7nI/edit?usp=sharing",
 };
