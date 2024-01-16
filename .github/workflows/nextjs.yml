@@ -32,6 +32,10 @@ jobs:
         with:
           node-version: "16"
           cache: 'yarn'
+      - name: Clear Yarn Cache
+        run: yarn cache clean
+      - name: Delete node_modules and yarn.lock
+        run: rm -rf node_modules yarn.lock
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build with Next.js
@@ -65,4 +69,5 @@ jobs:
           path: .
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
+
 
