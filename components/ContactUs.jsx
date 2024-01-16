@@ -82,9 +82,9 @@ export const ContactUs = () => {
               <Col lg="8">
                 <Card className="bg-gradient-secondary shadow">
                   <CardBody className="p-lg-5">
-                    <h4 className="mb-1">Want to work with me?</h4>
+                    <h4 className="mb-1">Want to get in touch?</h4>
                     <p className="mt-0">
-                      Your project is very important to me.
+                      Please feel free to write me an email.
                     </p>
                     <FormGroup className={classnames("mt-5", {})}>
                       <InputGroup className="input-group-alternative-focus-ring">
