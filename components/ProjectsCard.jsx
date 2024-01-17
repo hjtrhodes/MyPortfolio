@@ -3,6 +3,8 @@ import React from "react";
 import { Card, CardBody, Col, Button } from "reactstrap";
 
 import { Fade } from "react-reveal";
+import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ProjectsCard = ({ data }) => {
 	return (
@@ -13,6 +15,23 @@ const ProjectsCard = ({ data }) => {
 						<div className="d-flex px-3">
 							<div className="pl-4">
 								<h3>{data.name}</h3>
+									<img
+										src={data.img}
+										style={{
+											objectFit: "cover",
+											left: 0,
+											right: 0,
+											top: "7rem",
+											marginLeft: "auto",
+											marginRight: "auto",
+											width: "100%",
+											height: "15rem",
+											borderRadius: "8%",
+											boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+										}}
+										className="shadow mb-3"
+										alt={data.companylogo}
+									/>
 								<p className="description mt-3">{data.desc}</p>
 								{data.github ? (
 									<Button
@@ -24,7 +43,7 @@ const ProjectsCard = ({ data }) => {
 										aria-label="Github"
 									>
 										<span className="btn-inner--icon">
-											<i className="fa fa-github" />
+											See the Code
 										</span>
 									</Button>
 								) : null}
@@ -37,7 +56,6 @@ const ProjectsCard = ({ data }) => {
 										rel="noopener" aria-label="Twitter"
 									>
 										<span className="btn-inner--icon">
-											<i className="fa fa-arrow-right mr-2" />
 										</span>
 										<span className="nav-link-inner--text ml-1">
 											Demo

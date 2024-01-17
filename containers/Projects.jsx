@@ -4,6 +4,9 @@ import { projects } from "../portfolio";
 import { Container, Row } from "reactstrap";
 import ProjectsCard from "../components/ProjectsCard";
 import { Fade } from "react-reveal";
+import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const Projects = () => {
 	return projects && (
@@ -12,7 +15,7 @@ const Projects = () => {
 				<div className="d-flex p-4">
 					<div>
 						<div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
-							<i className="ni ni-laptop text-info" />
+							<FontAwesomeIcon icon={faProjectDiagram} />
 						</div>
 					</div>
 					<div className="pl-4">

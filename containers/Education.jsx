@@ -2,6 +2,8 @@ import React from "react";
 import EducationCard from "../components/EducationCard";
 import { educationInfo } from "../portfolio";
 import { Container, Row, Col } from "reactstrap";
+import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Education = () => {
   return (
@@ -11,7 +13,7 @@ const Education = () => {
           <div className="d-flex px-3">
             <div>
               <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
-                <i className="ni ni-briefcase-24 text-info" />
+                <FontAwesomeIcon icon={faAddressCard} />
               </div>
             </div>
             <div className="pl-4">

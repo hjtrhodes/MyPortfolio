@@ -1,6 +1,8 @@
 import React from "react";
 import { experience } from "../portfolio";
 import { Container, Row } from "reactstrap";
+import { faBook } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Fade } from "react-reveal";
 
@@ -13,7 +15,7 @@ const Experience = () => {
 				<div className="d-flex p-4">
 					<div>
 						<div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info larger-icon">
-							<i className="ni ni-books text-info" />
+							<FontAwesomeIcon icon={faBook} />
 						</div>
 					</div>
 					<div className="pl-4">

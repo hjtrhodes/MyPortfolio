@@ -4,6 +4,8 @@ import { Card, Col, Row, Container } from "reactstrap";
 
 import SocialLinks from "../components/SocialLinks";
 import Image from "next/image";
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const GithubProfileCard = ({ prof }) => {
 	return (
@@ -20,13 +22,13 @@ const GithubProfileCard = ({ prof }) => {
 							/>
 						</Col>
 						<Col lg="8" className="order-lg-1">
-							<h2 className="text-white">Reach Out to me!</h2>
+							{/* <h2 className="text-white">Contact me using the links below:</h2> */}
 							<p className="lead text-white mt-3">
-								Want to discuss a project or just say hello? Feel free to contact me!
+								Want to discuss a project? Feel free to contact me using the links below:
 							</p>
-							<p className="text-white mt-3">{prof.bio}</p>
+							{/* <p className="text-white mt-3">{prof.bio}</p> */}
 							<div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
-								<i className="ni ni-pin-3 text-info mr-2" />
+								<FontAwesomeIcon icon={faLocationDot} style={{ marginRight: '8px' }} />
 								{prof.location}
 							</div>
 							<SocialLinks />

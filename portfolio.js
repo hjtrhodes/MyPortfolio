@@ -1,5 +1,4 @@
 import emoji from "react-easy-emoji";
-import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 
 export const greetings = {
@@ -24,7 +23,7 @@ export const socialLinks = {
 
 export const skillsSection = {
   title: "Technologies and Skills",
-  subTitle: "Below are the technologies I have experience with so far, but I always want to learn more! Currently I'm deepening my knowledge of React and starting to learn Typescript",
+  subTitle: "Below are my skills and the technologies I have experience with so far, but I always want to learn more! Currently I'm deepening my knowledge of React and starting to learn Typescript",
   data: [
     {
       title: "",
@@ -82,10 +81,6 @@ export const skillsSection = {
         {
           skillName: "MongoDB",
           fontAwesomeClassname: "logos:mongodb-icon",
-        },
-        {
-          skillName: "HTML",
-          fontAwesomeClassname: "vscode-icons:file-type-html",
         },
         {
           skillName: "CSS",
@@ -198,6 +193,7 @@ export const experience = [
 export const projects = [
   {
     name: "Bald Bible",
+    img: "/img/icons/common/Makers.jpeg",
     desc:
       "A fullstack Pinterest-style hair Loss positivity website to help people accept the change rather than use prevention products. Functionality includes Cloudinary image feed/upload, responsive feed page, likes and comments.",
     github: "https://github.com/hjtrhodes/baldbibleHR",
@@ -206,6 +202,7 @@ export const projects = [
   },
   {
     name: "Acebook",
+    img: "/img/icons/common/Makers.jpeg",
     desc:
       "A fullstack Facebook clone made from a starter codebase. Includes posts, newsfeed, profile page, likes, comments, search, image uploads. Built in a collaborative team in 2 weeks using AGILE methodology.",
     github: "https://github.com/hjtrhodes/Acebook-my-version",
@@ -213,7 +210,8 @@ export const projects = [
     tags: ["MERN", "MongoDB", "React", "Node", "Express"],
   },
   {
-    name: "MekersBnB",
+    name: "MakersBnB",
+    img: "/img/icons/common/Makers.jpeg",
     desc:
       "An AirBnB clone made from a starter codebase. Includes login, signup, sessions, user spaces, book a space with calendar. Built in a collaborative team in 1 week using AGILE methodology.",
     github: "https://github.com/hjtrhodes/MakersBNBPersonal",
@@ -222,6 +220,7 @@ export const projects = [
   },
   {
     name: "Rock, Paper, Scissors",
+    img: "/img/icons/common/Makers.jpeg",
     desc:
       "This was a small personal project and deployment I made to practise using React components, state, props, passing state and props between components, rules matrixes and conditional rendering. The base of this project was Vite.",
       github: "https://github.com/hjtrhodes/RockPaperScissorReact",
