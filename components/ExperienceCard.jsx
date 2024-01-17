@@ -36,7 +36,7 @@ const ExperienceCard = ({ data }) => {
 							className="shadow mb-3"
 							alt={data.companylogo}
 						/>
-						<CardTitle tag="h4" className="mb-2">
+						<CardTitle tag="h4" className="mb-2" style={{ fontSize: 'medium' }}>
 							{data.company}
 						</CardTitle>
 						<CardSubtitle tag="h5" className="mb-2">
@@ -46,6 +46,7 @@ const ExperienceCard = ({ data }) => {
 						<CardText
 							tag="div"
 							className="description my-3 text-center font-weight-bold"
+							style={{ fontSize: 'medium' }}
 						>
 							{data.desc}
 							<ul>
