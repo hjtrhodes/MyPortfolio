@@ -140,7 +140,7 @@ export const educationInfo = [
     github: "https://github.com/hjtrhodes",
   },
   {
-    schoolName: "Personal",
+    schoolName: "Personal:",
     subHeader: "",
     duration: "",
     grade: "",
@@ -193,7 +193,7 @@ export const experience = [
 export const projects = [
   {
     name: "Bald Bible",
-    img: "/img/icons/common/Makers.jpeg",
+    img: "/img/icons/common/BaldBible.jpeg",
     desc:
       "A fullstack Pinterest-style hair Loss positivity website to help people accept the change rather than use prevention products. Functionality includes Cloudinary image feed/upload, responsive feed page, likes and comments.",
     github: "https://github.com/hjtrhodes/baldbibleHR",
@@ -202,7 +202,7 @@ export const projects = [
   },
   {
     name: "Acebook",
-    img: "/img/icons/common/Makers.jpeg",
+    img: "/img/icons/common/Acebook.jpeg",
     desc:
       "A fullstack Facebook clone made from a starter codebase. Includes posts, newsfeed, profile page, likes, comments, search, image uploads. Built in a collaborative team in 2 weeks using AGILE methodology.",
     github: "https://github.com/hjtrhodes/Acebook-my-version",
@@ -211,7 +211,7 @@ export const projects = [
   },
   {
     name: "MakersBnB",
-    img: "/img/icons/common/Makers.jpeg",
+    img: "/img/icons/common/MakersBNB.jpeg",
     desc:
       "An AirBnB clone made from a starter codebase. Includes login, signup, sessions, user spaces, book a space with calendar. Built in a collaborative team in 1 week using AGILE methodology.",
     github: "https://github.com/hjtrhodes/MakersBNBPersonal",
