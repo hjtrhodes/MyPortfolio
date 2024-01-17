@@ -195,7 +195,7 @@ export const projects = [
     name: "Bald Bible",
     img: "/img/icons/common/BaldBible.jpeg",
     desc:
-      "A fullstack Pinterest-style hair Loss positivity website to help people accept the change rather than use prevention products. Functionality includes Cloudinary image feed/upload, responsive feed page, likes and comments.",
+      "A fullstack Pinterest-style hair loss positivity website to help people accept the change rather than use prevention products. Functionality includes Cloudinary image feed/upload, responsive feed page, likes and comments.",
     github: "https://github.com/hjtrhodes/baldbibleHR",
     link: "",
     tags: ["MERN", "MongoDB", "React", "Node", "Express"],
