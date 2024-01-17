@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import classnames from "classnames";
 import Alert from "./Alerts";
+import { BsEnvelope } from "react-icons/bs";
+import { FaRunning } from "react-icons/fa";
 
 import {
   Button,
@@ -90,7 +92,7 @@ export const ContactUs = () => {
                       <InputGroup className="input-group-alternative-focus-ring">
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
-                            <i className="ni ni-user-run" />
+                            <FaRunning />
                           </InputGroupText>
                         </InputGroupAddon>
                         <Input
@@ -105,7 +107,7 @@ export const ContactUs = () => {
                       <InputGroup className="input-group-alternative-focus-ring">
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
-                            <i className="ni ni-email-83" />
+                            <BsEnvelope />
                           </InputGroupText>
                         </InputGroupAddon>
                         <Input

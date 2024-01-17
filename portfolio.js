@@ -146,9 +146,9 @@ export const educationInfo = [
     grade: "",
     desc: "",
     descBullets: [
-      "I am a 33-year-old father to my adorable and lively son, Freddie, and husband to my wife, Madeleine. I live just outside Reading in a small town called Sonning Common but previously lived in Central London for ten years.", 
-      "Originally, I am from Jersey in the Channel Islands. I lived there for 21 years before I moved to London and I still have family and friends there who I try to visit as much as possible.",
-      "I love sports; running, cycling, Formula 1, rugby, and American football all find a place on my list of interests. Being a dedicated cyclist myself, I love exploring the countryside on my bike.",
+      "I am a father to my adorable one year old son, Freddie, and husband to Madeleine. I moved just outside Reading last year to a small town called Sonning Common but previously lived in Central London for ten years.", 
+      "Originally, I am from Jersey in the Channel Islands. I lived there for 21 years before I moved to London. I still have family and friends there who I try to visit as much as possible.",
+      "I love sports; running, cycling, Formula 1, rugby, and American football all find a place on my list of interests. I am a cyclist myself and love exploring the countryside on my bike.",
       "I have always enjoyed unraveling and understanding the workings of things, be it hardware or software. Whether it's DIY around the house or fixing motorbikes during my teenage years; I have always been a tinkerer, taking things apart, working out the problems and fixing them.", 
       "This pleasure now extends to coding and I take great joy in consistently pushing myself to comprehend the logic, syntax, and deepen my knowledge of the challenge in front of me. I am incredibly excited to continue my professional journey and see how much more I can learn!"
     ],
@@ -220,7 +220,7 @@ export const projects = [
   },
   {
     name: "Rock, Paper, Scissors",
-    img: "/img/icons/common/Makers.jpeg",
+    img: "/img/icons/common/RPS.jpeg",
     desc:
       "This was a small personal project and deployment I made to practise using React components, state, props, passing state and props between components, rules matrixes and conditional rendering. The base of this project was Vite.",
       github: "https://github.com/hjtrhodes/RockPaperScissorReact",

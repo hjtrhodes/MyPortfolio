@@ -1,11 +1,10 @@
 import React from "react";
+import { IoLocationSharp } from "react-icons/io5";
 
 import { Card, Col, Row, Container } from "reactstrap";
 
 import SocialLinks from "../components/SocialLinks";
 import Image from "next/image";
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const GithubProfileCard = ({ prof }) => {
 	return (
@@ -22,13 +21,13 @@ const GithubProfileCard = ({ prof }) => {
 							/>
 						</Col>
 						<Col lg="8" className="order-lg-1">
-							{/* <h2 className="text-white">Contact me using the links below:</h2> */}
+							<h2 className="text-white">Contact me:</h2>
 							<p className="lead text-white mt-3">
-								Want to discuss a project? Feel free to contact me using the links below:
+								Whether you want to discuss a project or just say hello, my inbox is always open.
 							</p>
-							{/* <p className="text-white mt-3">{prof.bio}</p> */}
+							<p className="text-white mt-3">{prof.bio}</p>
 							<div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
-								<FontAwesomeIcon icon={faLocationDot} style={{ marginRight: '8px' }} />
+								<IoLocationSharp />
 								{prof.location}
 							</div>
 							<SocialLinks />
