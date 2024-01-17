@@ -9,7 +9,7 @@ const GreetingLottie = ({ animationPath }) => {
 	};
 
 	return (
-		<div onClick={() => null}>
+		<div style={{ pointerEvents: 'none' }} >
 			<Lottie options={defaultOptions} />
 		</div>
 	);
