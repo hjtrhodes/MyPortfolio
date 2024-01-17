@@ -19,14 +19,11 @@ const ProjectsCard = ({ data }) => {
 										src={data.img}
 										style={{
 											objectFit: "cover",
-											left: 0,
-											right: 0,
-											top: "7rem",
 											marginLeft: "auto",
 											marginRight: "auto",
 											width: "100%",
-											height: "15rem",
-											borderRadius: "8%",
+											height: "15rem",  // Set height to auto for responsiveness
+											borderRadius: "10%",
 											boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
 										}}
 										className="shadow mb-3"
