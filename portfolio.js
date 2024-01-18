@@ -4,7 +4,7 @@ import emoji from "react-easy-emoji";
 export const greetings = {
   name: "Harry Rhodes",
   title: "Welcome to my Portfolio.",
-  intro: "I'm a Software Developer and graduate from Makers' Full Stack Software Development course. I love understanding how things work, problem-solving and learning!",
+  intro: "I'm a Software Developer and graduate from Makers' Full Stack Software Development course. I love understanding how things work, problem-solving and learning.",
   technologies: "I'm a proud father, a lover of cycling and I'm addicted to chocolate digestives!",
   CVLink: "https://docs.google.com/document/d/1WDQ-0gyIWZ4Quz8XPf9fVCJSYeT4G6iH9QUZh5Qx7nI/edit?usp=sharing",
 };
@@ -23,7 +23,7 @@ export const socialLinks = {
 
 export const skillsSection = {
   title: "Technologies and Skills",
-  subTitle: "Below are my skills and the technologies I have experience with so far, but I always want to learn more! Currently I'm deepening my knowledge of React and starting to learn Typescript",
+  subTitle: "Below are some of my skills and the technologies I have experience with so far, but I always want to learn more! Currently I'm deepening my knowledge of React and starting to learn Typescript.",
   data: [
     {
       title: "",
@@ -243,8 +243,8 @@ export const feedbacks = [
 ];
 
 export const seoData = {
-  title: "Harry's Portfolio",
-  description: "Software Developer showcasing my work.",
+  title: "Harry Rhodes' Portfolio",
+  description: "Software Developer showcasing my projects and skills.",
   url: "https://hrhodes.co.uk/",
   keywords: [
     "Harry Rhodes",

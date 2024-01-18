@@ -25,7 +25,7 @@ const GithubProfileCard = ({ prof }) => {
 							<p className="lead text-white mt-3">
 								Whether you want to discuss a project or just say hello, my inbox is always open.
 							</p>
-							<p className="text-white mt-3">{prof.bio}</p>
+							{/*<p className="text-white mt-3">{prof.bio}</p>*/}
 							<div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
 								<IoLocationSharp />
 								{prof.location}
