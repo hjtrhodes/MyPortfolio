@@ -185,7 +185,7 @@ export const experience = [
     role: "",
     company: "University of Exeter",
     companylogo: "/img/icons/common/chamber.jpeg",
-    date: "September 2008 – August 2011,
+    date: "September 2008 – August 2011",
     desc:
       "Bachelor of Arts with Honours in Sociology, 2:1"  },
 ];
