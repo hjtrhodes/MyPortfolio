@@ -136,7 +136,7 @@ export const educationInfo = [
     descBullets: [
       "As an aspiring tech professional with a background as a primary teacher and year group leader, I bring a unique blend of creative, analytical and interpersonal skills as well as a passionate growth mindset to the world of technology.",
       "After taking time to expose myself to basic programming in HTML, CSS and Python I realised how much I enjoyed the challenge of solving coding problems and mastering new ideas. As a result I made the exciting decision to pursue a career in Tech and completed the Makers Software Development bootcamp. It was there I was pleased to discover that abilities honed in my previous career, such as simplifying and breaking down concepts, collaborating with a team to pursue a shared goal and my desire to learn, have served me well when mastering the new technologies, programming languages, and development tools I have been exposed to.",
-      "In my new career I am looking to add value to a collaborative and innovative environment. I am excited to progress my skills by deepening my current knowledge base and challenging myself to learn even more new technologies."    ],
+      "In my new career I am looking for an opportunity to add value to a collaborative and innovative environment. I am excited to progress my skills by deepening my current knowledge base and challenging myself to learn even more new technologies."    ],
     github: "https://github.com/hjtrhodes",
   },
   {
@@ -150,7 +150,7 @@ export const educationInfo = [
       "Originally, I am from Jersey in the Channel Islands. I lived there for 21 years before I moved to London. I still have family and friends there who I try to visit as much as possible.",
       "I love sports: running, cycling, Formula 1, rugby, and American football all find a place on my list of interests. I am a cyclist myself and love exploring the countryside on my bike.",
       "I have always enjoyed unraveling and understanding the workings of things, be it hardware or software. Whether it's DIY around the house or fixing motorbikes during my teenage years; I have always been a tinkerer, taking things apart, working out the problems and fixing them.", 
-      "This pleasure now extends to coding. I take great joy in consistently deepening my knowledge of the the logic and syntax of the challenge in front of me. I am incredibly excited to continue my professional journey and see how much more I can learn!"
+      "This pleasure now extends to coding. I enjoy consistently expanding my knowledge to meet the challenge infront of me, deepening my understanding of the logic and syntax along the way. I am incredibly excited to continue my professional journey and see how much more I can learn!"
     ],
     github: "https://github.com/hjtrhodes",
   }
