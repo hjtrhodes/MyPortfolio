@@ -23,7 +23,7 @@ export const socialLinks = {
 
 export const skillsSection = {
   title: "Technologies and Skills",
-  subTitle: "Below are some of my skills and the technologies I have experience with so far, but I always want to learn more! Currently I'm deepening my knowledge of React and starting to learn Typescript.",
+  subTitle: "Below are some of my skills and the technologies I have experience with so far, but I always want to learn more! Currently I'm deepening my knowledge of React and experimenting with Typescript.",
   data: [
     {
       title: "",
@@ -146,11 +146,11 @@ export const educationInfo = [
     grade: "",
     desc: "",
     descBullets: [
-      "I am a father to my adorable one year old son, Freddie, and husband to Madeleine. I moved just outside Reading last year to a small town called Sonning Common but previously lived in Central London for ten years.", 
+      "I am a father to my adorable one year old son, Freddie, and husband to Madeleine. I moved to a small town just outside Reading last year but previously lived in Central London for ten years.", 
       "Originally, I am from Jersey in the Channel Islands. I lived there for 21 years before I moved to London. I still have family and friends there who I try to visit as much as possible.",
-      "I love sports; running, cycling, Formula 1, rugby, and American football all find a place on my list of interests. I am a cyclist myself and love exploring the countryside on my bike.",
+      "I love sports: running, cycling, Formula 1, rugby, and American football all find a place on my list of interests. I am a cyclist myself and love exploring the countryside on my bike.",
       "I have always enjoyed unraveling and understanding the workings of things, be it hardware or software. Whether it's DIY around the house or fixing motorbikes during my teenage years; I have always been a tinkerer, taking things apart, working out the problems and fixing them.", 
-      "This pleasure now extends to coding and I take great joy in consistently pushing myself to comprehend the logic, syntax, and deepen my knowledge of the challenge in front of me. I am incredibly excited to continue my professional journey and see how much more I can learn!"
+      "This pleasure now extends to coding. I take great joy in consistently deepening my knowledge of the the logic and syntax of the challenge in front of me. I am incredibly excited to continue my professional journey and see how much more I can learn!"
     ],
     github: "https://github.com/hjtrhodes",
   }
@@ -161,7 +161,7 @@ export const experience = [
     role: "",
     company: "Makers Academy",
     companylogo: "/img/icons/common/Makers.jpeg",
-    date: "Sept 23' – Jan 24'",
+    date: "September 2023 – January 2024",
     desc:
       "Software Development Graduate",
   },
@@ -169,7 +169,7 @@ export const experience = [
     role: "",
     company: "University of East London",
     companylogo: "/img/icons/common/ovs.png",
-    date: "Sept 16' – Aug 18'",
+    date: "September 2016 – August 2018",
     desc:
     "Master of Arts in Education, Pass with Distinction",
   },
@@ -177,7 +177,7 @@ export const experience = [
     role: "",
     company: "University of East London",
     companylogo: "/img/icons/common/ovs.png",
-    date: "Sept 15' – Aug 15'",
+    date: "September 2015 – August 2015",
     desc:
     "Postgraduate Certificate of Education",
   },
@@ -185,7 +185,7 @@ export const experience = [
     role: "",
     company: "University of Exeter",
     companylogo: "/img/icons/common/chamber.jpeg",
-    date: "Sept 08' – Aug 11",
+    date: "September 2008 – August 2011,
     desc:
       "Bachelor of Arts with Honours in Sociology, 2:1"  },
 ];
@@ -195,7 +195,7 @@ export const projects = [
     name: "Bald Bible",
     img: "/img/icons/common/BaldBible.jpeg",
     desc:
-      "A fullstack Pinterest-style hair loss positivity website to help people accept the change rather than use prevention products. Functionality includes Cloudinary image feed/upload, responsive feed page, likes and comments.",
+      "A fullstack Pinterest-style hair loss positivity website to help people embrace the change rather than use prevention products. Functionality includes Cloudinary image feed/upload, responsive feed page, likes and comments.",
     github: "https://github.com/hjtrhodes/baldbibleHR",
     link: "",
     tags: ["MERN", "MongoDB", "React", "Node", "Express"],
