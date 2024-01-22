@@ -197,7 +197,7 @@ export const projects = [
     desc:
       "A fullstack Pinterest-style hair loss positivity website to help people embrace the change rather than use prevention products. Functionality includes Cloudinary image feed/upload, responsive feed page, likes and comments.",
     github: "https://github.com/hjtrhodes/baldbibleHR",
-    link: "",
+    link: "https://baldbible-s8q0.onrender.com/",
     tags: ["MERN", "MongoDB", "React", "Node", "Express"],
   },
   {
