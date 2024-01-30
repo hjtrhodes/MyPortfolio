@@ -206,7 +206,7 @@ export const projects = [
     desc:
       "A fullstack Facebook clone made from a starter codebase. Includes posts, newsfeed, profile page, likes, comments, search, image uploads. Built in a collaborative team in 2 weeks using AGILE methodology.",
     github: "https://github.com/hjtrhodes/Acebook-my-version",
-    link: "",
+    link: "https://acebook-mo3r.onrender.com/",
     tags: ["MERN", "MongoDB", "React", "Node", "Express"],
   },
   {
