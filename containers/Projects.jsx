@@ -18,12 +18,11 @@ const Projects = () => {
 							<FontAwesomeIcon icon={faProjectDiagram} />
 						</div>
 					</div>
-					<div className="pl-4">
-    					<h4 className="display-3 text-info">Projects</h4>
-							</div>
-							<br/>
+						<div className="pl-4">
+							<h4 className="display-3 text-info">Projects</h4>
+						</div>
+							<h5 className="text-center">These projects are deployed on Render.com and spin down with inactivity. Once you click Demo, you may have to wait a while for them to load as the servers wake up.</h5>
 					</div>
-					    <strong>These projects are deployed on Render.com and spin down with inactivity. Once you click Demo, you may have to wait a while for them to load as the servers wake up.</strong>
 				<Row className="row-grid align-items-center">
 					{projects.map((data, i) => {
 						return <ProjectsCard key={i} data={data} />;
