@@ -23,8 +23,8 @@ const Projects = () => {
 							</div>
 							<br/>
 					</div>
-					<div>
-						<p className="pl-4">
+					<div className="text-center my-5 section section-lg">
+						<p className="lead">
 					    	<strong>These projects are deployed on Render.com and spin down with inactivity. Once you click Demo, you may have to wait a while for them to load as the servers wake up.</strong>
 						</p>
 					</div>
