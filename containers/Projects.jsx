@@ -23,11 +23,9 @@ const Projects = () => {
 							</div>
 							<br/>
 					</div>
-					<div className="text-center my-5 section section-lg">
-						<p className="lead">
+						<p className="text-center my-5 section section-lg">
 					    	<strong>These projects are deployed on Render.com and spin down with inactivity. Once you click Demo, you may have to wait a while for them to load as the servers wake up.</strong>
 						</p>
-					</div>
 				<Row className="row-grid align-items-center">
 					{projects.map((data, i) => {
 						return <ProjectsCard key={i} data={data} />;
