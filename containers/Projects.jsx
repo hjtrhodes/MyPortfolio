@@ -21,6 +21,9 @@ const Projects = () => {
 					<div className="pl-4">
 						<h4 className="display-3 text-info">Projects</h4>
 					</div>
+					<div className="pl-4">
+						<h4 className="display-3 text-info">These projects are deployed on Render.com and spin down with inactivity. Once you click Demo, you may have to wait a while for them to load as the servers wake up.</h4>
+					</div>
 				</div>
 				<Row className="row-grid align-items-center">
 					{projects.map((data, i) => {
