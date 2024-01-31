@@ -22,9 +22,11 @@ const Projects = () => {
     					<h4 className="display-3 text-info">Projects</h4>
 							</div>
 							<br/>
-							<p className="pl-4">
-					    		<strong>These projects are deployed on Render.com and spin down with inactivity. Once you click Demo, you may have to wait a while for them to load as the servers wake up.</strong>
-							</p>
+					</div>
+					<div>
+						<p className="pl-4">
+					    	<strong>These projects are deployed on Render.com and spin down with inactivity. Once you click Demo, you may have to wait a while for them to load as the servers wake up.</strong>
+						</p>
 					</div>
 				<Row className="row-grid align-items-center">
 					{projects.map((data, i) => {
