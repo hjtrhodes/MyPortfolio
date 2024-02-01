@@ -148,7 +148,7 @@ export const educationInfo = [
     descBullets: [
       "I am a father to my adorable one year old son, Freddie, and husband to Madeleine. I moved to a small town just outside Reading last year but previously lived in Central London for ten years.", 
       "Originally, I am from Jersey in the Channel Islands. I lived there for 21 years before I moved to London. I still have family and friends there who I try to visit as much as possible.",
-      "I went to the University of Exeter for my Bachelors Degree and UEL for my Masters. My wife and I met at Exeter and love going back to visit.",
+      "I went to the University of Exeter for my Bachelors Degree and UEL for my Masters. My wife and I met during our time at Exeter University and love going back to visit the city.",
       "I love sports: running, cycling, Formula 1, rugby, weightlifting and American football all find a place on my list of interests. I am a cyclist myself and love exploring the countryside on my bike.",
       "I have always enjoyed unraveling and understanding the workings of things, be it hardware or software. Whether it's DIY around the house or fixing motorbikes during my teenage years; I have always been a tinkerer, taking things apart, working out the problems and fixing them.", 
       "This pleasure now extends to coding. I enjoy consistently expanding my knowledge to meet the challenge infront of me, deepening my understanding of the logic and syntax along the way. I am incredibly excited to continue my professional journey and see how much more I can learn!"
