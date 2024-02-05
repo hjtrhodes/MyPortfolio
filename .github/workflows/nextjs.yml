@@ -1,40 +1,36 @@
-name: Node.js CI
+name: Build and Deploy
 
 on:
   push:
+    branches:
+      - main # Modify this based on your branch configuration
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-
     steps:
-      - uses: actions/checkout@v3
-        
-      - uses: actions/setup-node@v3
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 16
-          cache: npm
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Build
         run: |
-          npm ci --legacy-peer-deps
           npm run build
-          npm run export
-          touch out/.nojekyll
+          echo "NEXT_PUBLIC_EMAILJS_SERVICE_ID=${{ secrets.NEXT_PUBLIC_EMAILJS_SERVICE_ID }}" >> .env
+          echo "NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=${{ secrets.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID }}" >> .env
+          echo "NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=${{ secrets.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY }}" >> .env
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-pages
-          folder: out
-
-      # Conditional step to deploy only for the master branch
-      - name: Deploy to Production
-        if: github.ref == 'refs/heads/master'
-        run: |
-          # Your deployment steps for the master branch
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
 
