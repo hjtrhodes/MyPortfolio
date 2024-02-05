@@ -1,9 +1,9 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useState, useEffect } from "react";
 import classnames from "classnames";
 import Alert from "./Alerts";
 import { BsEnvelope } from "react-icons/bs";
 import { FaRunning, FaRegThumbsUp, FaRegThumbsDown } from "react-icons/fa";
+import { useForm, ValidationError } from '@formspree/react';
 
 import {
   Button,
@@ -20,10 +20,8 @@ import {
 } from "reactstrap";
 
 export const ContactUs = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [alert, setAlert] = useState(null);
+  const [state, handleSubmit] = useForm("mnqepbak");
+  const [formKey, setFormKey] = useState(0); // <-- State to control form re-render
 
   const successAlert = {
     color: "success",
@@ -37,38 +35,15 @@ export const ContactUs = () => {
     message: "Oops! Something went wrong. Please try again later.",
   };
 
-  const sendEmail = (e) => {
+  useEffect(() => {
+    if (state.succeeded) {
+      setFormKey(prevKey => prevKey + 1); // <-- Increment key to force re-render
+    }
+  }, [state.succeeded]);
+
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-
-    const templateParams = {
-      name: name,
-      email: email,
-      message: message,
-    };
-
-    const serviceID = 'service_1bwtoxc'
-    const templateID = 'template_hf63b0g'
-
-    console.log("Sending email with data:", templateParams);
-    emailjs.init({
-      publicKey: "r1NqJ7dCfXADNLwM6",
-    });
-    emailjs
-      .send(
-        serviceID,
-        templateID,
-        templateParams,
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setAlert(successAlert);
-        },
-        (error) => {
-          console.log(error.text);
-          setAlert(errorAlert);
-        }
-      );
+    await handleSubmit(e);
   };
 
   return (
@@ -84,14 +59,21 @@ export const ContactUs = () => {
           <span />
           <span />
         </div>
-        {alert && (
+        {state.succeeded && (
           <Alert
-            color={alert.color}
-            icon={alert.icon}
-            message={alert.message}
+            color={successAlert.color}
+            icon={successAlert.icon}
+            message={successAlert.message}
           />
         )}
-        <form onSubmit={sendEmail}>
+        {state.errors && state.errors.length > 0 && (
+          <Alert
+            color={errorAlert.color}
+            icon={errorAlert.icon}
+            message={errorAlert.message}
+          />
+        )}
+        <form key={formKey} onSubmit={handleFormSubmit}> {/* <-- Use key prop for re-render */}
           <Container>
             <Row className="justify-content-center">
               <Col lg="8">
@@ -108,8 +90,7 @@ export const ContactUs = () => {
                         <Input
                           placeholder="Your name"
                           type="text"
-                          value={name}
-                          onChange={(e) => setName(e.target.value)}
+                          name="name"
                           required
                         />
                       </InputGroup>
@@ -124,8 +105,7 @@ export const ContactUs = () => {
                         <Input
                           placeholder="Email address"
                           type="email"
-                          value={email}
-                          onChange={(e) => setEmail(e.target.value)}
+                          name="email"
                           required
                         />
                       </InputGroup>
@@ -137,11 +117,15 @@ export const ContactUs = () => {
                         placeholder="Type a message..."
                         rows="4"
                         type="textarea"
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
+                        name="message"
                         required
                       />
                     </FormGroup>
+                    <ValidationError 
+                      prefix="Email" 
+                      field="email"
+                      errors={state.errors}
+                    />
                     <div>
                       <Button
                         block
@@ -149,8 +133,9 @@ export const ContactUs = () => {
                         color="default"
                         size="lg"
                         type="submit"
+                        disabled={state.submitting}
                       >
-                        Send Message
+                        {state.submitting ? 'Sending...' : 'Send Message'}
                       </Button>
                     </div>
                   </CardBody>
@@ -165,3 +150,4 @@ export const ContactUs = () => {
 };
 
 export default ContactUs;
+
