@@ -39,7 +39,7 @@ export const ContactUs = () => {
     if (state.succeeded) {
       setFormKey(prevKey => prevKey + 1); // <-- Increment key to force re-render
     }
-  }, [state.succeeded]);
+  }, [state.succeeded, state.errors, state.submitting]);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
