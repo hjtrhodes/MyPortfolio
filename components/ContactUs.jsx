@@ -50,7 +50,9 @@ export const ContactUs = () => {
     const templateID = 'template_hf63b0g'
 
     console.log("Sending email with data:", templateParams);
-
+    emailjs.init({
+      publicKey: "r1NqJ7dCfXADNLwM6",
+    });
     emailjs
       .send(
         serviceID,
