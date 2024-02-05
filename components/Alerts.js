@@ -6,7 +6,7 @@ const Alert = ({ message, color, icon }) => {
     // this should reappear every time the user clicks on the button
     <UncontrolledAlert color={color}>
       <span className="alert-inner--icon">
-        <i className={icon} />
+        {icon}
       </span>
       <span className="alert-inner--text">
         <strong>{message}</strong>

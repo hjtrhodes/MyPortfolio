@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import classnames from "classnames";
 import Alert from "./Alerts";
 import { BsEnvelope } from "react-icons/bs";
-import { FaRunning } from "react-icons/fa";
+import { FaRunning, FaRegThumbsUp, FaRegThumbsDown } from "react-icons/fa";
 
 import {
   Button,
@@ -20,31 +20,40 @@ import {
 } from "reactstrap";
 
 export const ContactUs = () => {
-  const form = useRef();
-  const [alert, setAlert] = React.useState(null);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [alert, setAlert] = useState(null);
 
   const successAlert = {
     color: "success",
-    icon: "ni ni-like-2",
-    message: " Your message has been sent successfully!",
+    icon: <FaRegThumbsUp />,
+    message: "Your message has been sent successfully!",
   };
 
   const errorAlert = {
     color: "danger",
-    icon: "ni ni-bell-55",
-    message: " Oops! Something went wrong. Please try again later.",
+    icon: <FaRegThumbsDown />,
+    message: "Oops! Something went wrong. Please try again later.",
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log();
+
+    const templateParams = {
+      name: name,
+      email: email,
+      message: message,
+    };
+
+    console.log("Sending email with data:", templateParams);
 
     emailjs
-      .sendForm(
-        process.env.REACT_APP_NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -78,7 +87,7 @@ export const ContactUs = () => {
             message={alert.message}
           />
         )}
-        <form ref={form} onSubmit={sendEmail}>
+        <form onSubmit={sendEmail}>
           <Container>
             <Row className="justify-content-center">
               <Col lg="8">
@@ -95,7 +104,8 @@ export const ContactUs = () => {
                         <Input
                           placeholder="Your name"
                           type="text"
-                          name="user_name"
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
                           required
                         />
                       </InputGroup>
@@ -109,8 +119,9 @@ export const ContactUs = () => {
                         </InputGroupAddon>
                         <Input
                           placeholder="Email address"
-                          name="user_email"
                           type="email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
                           required
                         />
                       </InputGroup>
@@ -119,10 +130,11 @@ export const ContactUs = () => {
                       <Input
                         className="form-control-alternative-focus-ring"
                         cols="80"
-                        name="user_message"
                         placeholder="Type a message..."
                         rows="4"
                         type="textarea"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                         required
                       />
                     </FormGroup>

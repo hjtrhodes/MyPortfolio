@@ -18,12 +18,6 @@ jobs:
         with:
           node-version: 16
           cache: npm
-      
-      - name: Set environment variables
-        run: |
-          echo "REACT_APP_NEXT_PUBLIC_EMAILJS_SERVICE_ID=${{ secrets.REACT_APP_NEXT_PUBLIC_EMAILJS_SERVICE_ID }}" >> $GITHUB_ENV
-          echo "REACT_APP_NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=${{ secrets.REACT_APP_NEXT_PUBLIC_EMAILJS_TEMPLATE_ID }}" >> $GITHUB_ENV
-          echo "REACT_APP_NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=${{ secrets.REACT_APP_NEXT_PUBLIC_EMAILJS_PUBLIC_KEY }}" >> $GITHUB_ENV
 
       - name: Build
         run: |
