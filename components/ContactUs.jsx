@@ -50,10 +50,10 @@ export const ContactUs = () => {
 
     emailjs
       .send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        'service_1bwtoxc',
+        'template_hf63b0g',
         templateParams,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        'r1NqJ7dCfXADNLwM6'
       )
       .then(
         (result) => {
