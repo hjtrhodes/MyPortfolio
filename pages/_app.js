@@ -1,3 +1,7 @@
+// pages/_app.js
+
+import { useEffect } from 'react';
+import emailjs from 'emailjs-com';
 import { Analytics } from "@vercel/analytics/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/argon-design-system-react.css";
@@ -6,6 +10,10 @@ import "../styles/vendor/font-awesome/css/font-awesome.min.css";
 import "../styles/vendor/nucleo/css/nucleo.css";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    emailjs.init('r1NqJ7dCfXADNLwM6');
+  }, []);
+
   return (
     <>
       <Component {...pageProps} />
@@ -15,3 +23,4 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
+

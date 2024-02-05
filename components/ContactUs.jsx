@@ -46,14 +46,16 @@ export const ContactUs = () => {
       message: message,
     };
 
+    const serviceID = 'service_1bwtoxc'
+    const templateID = 'template_hf63b0g'
+
     console.log("Sending email with data:", templateParams);
 
     emailjs
       .send(
-        'service_1bwtoxc',
-        'template_hf63b0g',
+        serviceID,
+        templateID,
         templateParams,
-        'r1NqJ7dCfXADNLwM6'
       )
       .then(
         (result) => {
