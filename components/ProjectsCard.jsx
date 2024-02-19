@@ -29,10 +29,27 @@ const ProjectsCard = ({ data }) => {
 										className="shadow mb-3"
 										alt={data.companylogo}
 									/>
+							{data.mov ? (
+								<>
+									<p className="text-center"><strong>Functionality Demo Video</strong></p>
+									<div className="video-container">
+										<iframe
+											title="Bald Bible Demo"
+											width="100%"
+											height="315"
+											src={`https://www.youtube.com/embed/${data.mov}`}
+											frameBorder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowFullScreen
+										></iframe>
+									</div>
+								</>
+							) : null}
+
 								<p className="description mt-3">{data.desc}</p>
 								{data.github ? (
 									<Button
-										className="btn-icon"
+										className="btn-icon mb-2 w-100"
 										color="github"
 										href={data.github}
 										target="_blank"
@@ -40,13 +57,13 @@ const ProjectsCard = ({ data }) => {
 										aria-label="Github"
 									>
 										<span className="btn-inner--icon">
-											See the Code
+											More information and Source code
 										</span>
 									</Button>
 								) : null}
 								{data.link ? (
 									<Button
-										className="btn-icon"
+										className="btn-icon mb-2 w-100"
 										color="success"
 										href={data.link}
 										target="_blank"
@@ -55,7 +72,7 @@ const ProjectsCard = ({ data }) => {
 										<span className="btn-inner--icon">
 										</span>
 										<span className="nav-link-inner--text ml-1">
-											Demo
+											See the site Live
 										</span>
 									</Button>
 								) : null}
