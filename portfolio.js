@@ -229,7 +229,7 @@ export const projects = [
     desc:
       "This was a small personal project and deployment I made to practise using React components, state, props, passing state and props between components, rules matrixes and conditional rendering. The base of this project was Vite.",
       github: "https://github.com/hjtrhodes/RockPaperScissorReact",
-      link: "https://rockpaperscissors-tt4y.onrender.com/",
+      link: "",
     tags: ["React", "Props", "State"],
   },
 ];
