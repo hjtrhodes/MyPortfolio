@@ -22,7 +22,7 @@ const Projects = () => {
 							<h4 className="display-3 text-info">Projects</h4>
 						</div>
 					</div>
-							<p className="text-center lead">These projects are deployed on Render.com and spin down with inactivity. Once you click Demo please be patient, you may have to wait a while for them to load as the servers wake up.</p>
+							<p className="text-center lead">These projects are deployed on Render.com and spin down with inactivity. Once you click 'See The Site Live' please be patient, you may have to wait a while for them to load as the servers wake up.</p>
 				<Row className="row-grid align-items-center">
 					{projects.map((data, i) => {
 						return <ProjectsCard key={i} data={data} />;
