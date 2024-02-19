@@ -23,16 +23,15 @@ const ProjectsCard = ({ data }) => {
 											marginRight: "auto",
 											width: "100%",
 											height: "15rem",  // Set height to auto for responsiveness
-											borderRadius: "10%",
+											borderRadius: "3%",
 											boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
 										}}
 										className="shadow mb-3"
 										alt={data.companylogo}
 									/>
+									
 							{data.mov ? (
-								<>
-									<p className="text-center"><strong>Functionality Demo Video</strong></p>
-									<div className="video-container">
+								<div className="overflow-hidden">
 										<iframe
 											title="Bald Bible Demo"
 											width="100%"
@@ -41,9 +40,12 @@ const ProjectsCard = ({ data }) => {
 											frameBorder="0"
 											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 											allowFullScreen
+											style={{
+												borderRadius: "3%",
+												boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+											}}
 										></iframe>
-									</div>
-								</>
+								</div>
 							) : null}
 
 								<p className="description mt-3">{data.desc}</p>
