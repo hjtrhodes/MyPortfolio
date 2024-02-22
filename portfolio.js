@@ -197,7 +197,7 @@ export const projects = [
     img: "/img/icons/common/BaldBible.jpeg",
     mov: "RZVKPn00WF8",
     desc:
-      "A fullstack Pinterest-style hair loss positivity website to help people embrace the change rather than use prevention products. Functionality includes Cloudinary image feed/upload, responsive feed page, likes and comments.",
+      "Pinterest style, hair loss positivity website. Javascript. Tech Stack: React, Express, Node.js, MongoDB. Testing: Jest. Other Tech: Cloudinary, Bcrypt. Functionality includes login, signup, Cloudinary image feed/upload, responsive feed page, likes, comments, password security using Bcrypt, test suite. Built in a collaborative team in 2 weeks using AGILE methodology.",
     github: "https://github.com/hjtrhodes/baldbibleHR",
     link: "https://baldbible-s8q0.onrender.com/",
     tags: ["MERN", "MongoDB", "React", "Node", "Express"],
@@ -207,17 +207,17 @@ export const projects = [
     img: "/img/icons/common/Acebook.jpeg",
     mov: "t2ITyMQkPe0",
     desc:
-      "A fullstack Facebook clone made from a starter codebase. Includes posts, newsfeed, profile page, likes, comments, search, image uploads. Built in a collaborative team in 2 weeks using AGILE methodology.",
+      "Facebook clone. Javascript, Typescript. Tech Stack: React, Express, Node.js, MongoDB, TailwindCSS. Testing: Cypress, Jest. Other Tech: TailwindCSS, Multer, PostCSS, Vite, Bcrypt. Functionality includes login, signup, posts, newsfeed, profile page, likes, comments, search, navbar, image uploads. Built in a collaborative team in 2 weeks using AGILE methodology.",
     github: "https://github.com/hjtrhodes/Acebook-my-version",
     link: "https://acebook-mo3r.onrender.com/",
     tags: ["MERN", "MongoDB", "React", "Node", "Express"],
   },
   {
-    name: "MakersBnB",
-    img: "/img/icons/common/MakersBNB.jpeg",
+    name: "HomeStay",
+    img: "/img/icons/common/HomeStay.jpeg",
     mov: "",
     desc:
-      "An AirBnB clone made from a starter codebase. Includes login, signup, sessions, user spaces, book a space with calendar. Built in a collaborative team in 1 week using AGILE methodology.",
+      "AirBnB clone. Tech Stack: Python, Flask, PostgreSQL. Testing: Pytest. Functionality includes login, signup, sessions, user spaces, book a space with calendar, approve/reject a space. Built in a collaborative team in 1 week using AGILE methodology.",
     github: "https://github.com/hjtrhodes/MakersBNBPersonal",
     link: "",
     tags: ["Python", "Flask", "SQL", "Postgres", "Pytest"],
@@ -227,7 +227,7 @@ export const projects = [
     img: "/img/icons/common/RPS.jpeg",
     mov: "",
     desc:
-      "This was a small personal project and deployment I made to practise using React components, state, props, passing state and props between components, rules matrixes and conditional rendering. The base of this project was Vite.",
+      "Rock, Paper, Scissors Game. Javascript. Tech: Vite, React. Personal project and deployment made to practise using components, state, props, rules matrixes, conditional rendering and deployment to a web host. The base of this project was Vite.",
       github: "https://github.com/hjtrhodes/RockPaperScissorReact",
       link: "",
     tags: ["React", "Props", "State"],
