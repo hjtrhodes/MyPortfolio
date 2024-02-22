@@ -49,8 +49,8 @@ const ProjectsCard = ({ data }) => {
 							) : null}
 
 								<p className="description mt-3">{data.desc}</p>
-								<p className="description mt-3 font-bold">{data.languages}</p>
-								<p className="description mt-3 font-bold">{data.tech}</p>
+								<p className="description mt-3"><strong>{data.languages}</strong></p>
+								<p className="description mt-3"><strong>{data.tech}</strong></p>
 								<p className="description mt-3">{data.testing}</p>
 								<p className="description mt-3">{data.other}</p>
 								<p className="description mt-3">{data.functionality}</p>

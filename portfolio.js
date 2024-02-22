@@ -197,7 +197,7 @@ export const projects = [
     img: "/img/icons/common/BaldBible.jpeg",
     mov: "RZVKPn00WF8",
     desc:
-      "Pinterest style, hair loss positivity website built in a team using AGILE methodology.",
+      "Pinterest style, hair loss positivity website built in a team using AGILE methodology. Timeline was 2 weeks.",
     languages: "Languages: Javascript",
     tech: "Tech Stack: React, Express, Node.js, MongoDB",
     testing: "Testing: Jest",
@@ -212,7 +212,7 @@ export const projects = [
     img: "/img/icons/common/Acebook.jpeg",
     mov: "t2ITyMQkPe0",
     desc:
-      "Facebook clone built in a team using AGILE methodology.",
+      "Facebook clone built in a team using AGILE methodology. Timeline was 2 weeks.",
     languages: "Languages: Javascript, Typescript",
     tech: "Tech Stack: React, Express, Node.js, MongoDB",
     testing: "Testing: Cypress, Jest",
@@ -227,7 +227,7 @@ export const projects = [
     img: "/img/icons/common/HomeStay.jpeg",
     mov: "",
     desc:
-      "AirBnB clone built in a collaborative team using AGILE methodology.",
+      "AirBnB clone built in a collaborative team using AGILE methodology. Timeline was 1 week.",
     languages: "Languages: Python, SQL",
     tech: "Tech Stack: Flask, PostgreSQL",
     testing: "Testing: Pytest",
@@ -242,7 +242,7 @@ export const projects = [
     img: "/img/icons/common/RPS.jpeg",
     mov: "",
     desc:
-      "Rock, Paper, Scissors Game. Personal project and deployment made to practise using components, state, props, rules matrixes, conditional rendering and deployment to a web host.",
+      "Rock, Paper, Scissors Game. Personal project and deployment made to practise using components, state, props, rules matrixes and deployment.",
     languages: "Languages: Javascript",
     tech: "Tech Stack: Vite, React",
     testing: "",
