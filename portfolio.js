@@ -225,10 +225,10 @@ export const projects = [
   {
     name: "HomeStay",
     img: "/img/icons/common/HomeStay.jpeg",
-    mov: "",
+    mov: "pBcMyL0oLbo",
     desc:
       "AirBnB clone built in a collaborative team using AGILE methodology. Timeline was 1 week.",
-    languages: "Languages: Python, SQL",
+    languages: "Languages: Python, SQL, Javascript",
     tech: "Tech Stack: Flask, PostgreSQL",
     testing: "Testing: Pytest",
     other: "",
