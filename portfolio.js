@@ -4,8 +4,8 @@ import emoji from "react-easy-emoji";
 export const greetings = {
   name: "Harry Rhodes",
   title: "Welcome to my Portfolio.",
-  intro: "I'm a Software Developer and graduate from Makers' Full Stack Software Development course. My Languages are Javascript and Python. My main Tech Stack is React, Express, Node.js and MongoDB. I love React but am also highly adept with Python, Flask/Django and PostgreSQL.",
-  technologies: "I love problem-solving, learning and understanding how things work!",
+  intro: "I'm a Software Developer and graduate from Makers' Full Stack Software Development course. My languages are Javascript and Python. My main Tech Stack is React, Express, Node.js and MongoDB. I love React but am also highly adept with Python, Flask/Django and PostgreSQL.",
+  technologies: "",
   CVLink: "https://docs.google.com/document/d/1WDQ-0gyIWZ4Quz8XPf9fVCJSYeT4G6iH9QUZh5Qx7nI/edit?usp=sharing",
 };
 
@@ -23,7 +23,7 @@ export const socialLinks = {
 
 export const skillsSection = {
   title: "Technologies and Skills",
-  subTitle: "Below are some of my skills and the technologies I have experience with so far, but I code everyday and am constantly upskilling. Currently I'm continuing to work with React using Typescript.",
+  subTitle: " I love problem-solving, learning and understanding how things work! Below are some of my skills and the technologies I have experience with so far, but I code everyday and am constantly upskilling. Currently I'm continuing to work with React using Typescript.",
   data: [
     {
       title: "",
