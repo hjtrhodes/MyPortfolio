@@ -242,7 +242,7 @@ export const projects = [
     img: "/img/icons/common/RPS.jpeg",
     mov: "JbLGVsDVAZo",
     desc:
-      "Rock, Paper, Scissors Game. Personal project and deployment made to practise using components, state, props, rules matrixes and deployment.",
+      "Rock, Paper, Scissors Game. This is a small personal project I created when first learning React to practise using components, managing and passing state and functions as props, rules matrixes and later, my first deployment.",
     languages: "Languages: Javascript",
     tech: "Tech Stack: Vite, React",
     testing: "",
