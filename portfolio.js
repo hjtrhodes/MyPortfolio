@@ -4,7 +4,7 @@ import emoji from "react-easy-emoji";
 export const greetings = {
   name: "Harry Rhodes",
   title: "Welcome to my Portfolio.",
-  intro: "I'm a Software Developer and graduate from Makers' Full Stack Software Development course. My languages are Javascript and Python. My main Tech Stack is React, Express, Node.js and MongoDB. I love React but am also highly adept with Python, Flask/Django and PostgreSQL.",
+  intro: "I'm a Software Developer and graduate from Makers' Full Stack Software Development course. My languages are Javascript and Python. My main Tech Stack is React, Express, Node.js and MongoDB. I love React but am also highly adept with Python, Flask and PostgreSQL.",
   technologies: "",
   CVLink: "https://docs.google.com/document/d/1WDQ-0gyIWZ4Quz8XPf9fVCJSYeT4G6iH9QUZh5Qx7nI/edit?usp=sharing",
 };
