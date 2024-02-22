@@ -18,7 +18,7 @@ export const contact = {};
 export const socialLinks = {
   gmail: "gmail link",
   github: "https://github.com/hjtrhodes",
-  linkedin: "https://linkedin.com/in/harry-rhodes-851b3663",
+  linkedin: "https://www.linkedin.com/in/hjtrhodes",
 };
 
 export const skillsSection = {
