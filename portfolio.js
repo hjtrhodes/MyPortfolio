@@ -197,7 +197,7 @@ export const projects = [
     img: "/img/icons/common/BaldBible.jpeg",
     mov: "RZVKPn00WF8",
     desc:
-      "Pinterest style, hair loss positivity website. Javascript. Tech Stack: React, Express, Node.js, MongoDB. Testing: Jest. Other Tech: Cloudinary, Bcrypt. Functionality includes login, signup, Cloudinary image feed/upload, responsive feed page, likes, comments, password security using Bcrypt, test suite. Built in a collaborative team in 2 weeks using AGILE methodology.",
+      "Pinterest style, hair loss positivity website. Javascript. Tech Stack: React, Express, Node.js, MongoDB. Testing: Jest. Other Tech: Cloudinary, Bcrypt. Functionality includes login, signup, Cloudinary image feed/upload, responsive feed page, likes, comments, password security using Bcrypt, test suite. Built in a team using AGILE methodology.",
     github: "https://github.com/hjtrhodes/baldbibleHR",
     link: "https://baldbible-s8q0.onrender.com/",
     tags: ["MERN", "MongoDB", "React", "Node", "Express"],
@@ -207,7 +207,7 @@ export const projects = [
     img: "/img/icons/common/Acebook.jpeg",
     mov: "t2ITyMQkPe0",
     desc:
-      "Facebook clone. Javascript, Typescript. Tech Stack: React, Express, Node.js, MongoDB, TailwindCSS. Testing: Cypress, Jest. Other Tech: TailwindCSS, Multer, PostCSS, Vite, Bcrypt. Functionality includes login, signup, posts, newsfeed, profile page, likes, comments, search, navbar, image uploads. Built in a collaborative team in 2 weeks using AGILE methodology.",
+      "Facebook clone. Javascript, Typescript. Tech Stack: React, Express, Node.js, MongoDB, TailwindCSS. Testing: Cypress, Jest. Other Tech: TailwindCSS, Multer, PostCSS, Vite, Bcrypt. Functionality includes login, signup, posts, newsfeed, profile page, likes, comments, search, navbar, image uploads. Built in a team using AGILE methodology.",
     github: "https://github.com/hjtrhodes/Acebook-my-version",
     link: "https://acebook-mo3r.onrender.com/",
     tags: ["MERN", "MongoDB", "React", "Node", "Express"],
