@@ -1,17 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Fragment } from "react";
 import { greetings } from "../portfolio";
 import dynamic from "next/dynamic";
 import { FiFileText } from 'react-icons/fi';
 
+import { Icon } from "@iconify/react";
+import { Button, Col, Container, Row, UncontrolledTooltip } from "reactstrap";
+import { greetingsSkills } from "../portfolio";
+
+import GreetingLottie from "../components/DisplayLottie";
+import SocialLinks from "../components/SocialLinks";
 
 const ParticleBg = dynamic(() => import("particles-bg"), {
   ssr: false,
 });
-
-import { Button, Container, Row, Col } from "reactstrap";
-
-import GreetingLottie from "../components/DisplayLottie";
-import SocialLinks from "../components/SocialLinks";
 
 const Greetings = () => {
   useEffect(() => {
@@ -35,11 +36,78 @@ const Greetings = () => {
               <Row>
                 <Col lg="6">
                   <h1 className="display-3 text-white">
-                    {greetings.title + " "}
+                    {greetings.title}
                   </h1>
+            <strong className="text-white">My Technologies:</strong>
+          <div> 
+          			{greetingsSkills.data.map((section, index) => {
+          				return (
+          					<>
+                            {section.softwareSkills1.map((skill, i) => {
+          										return (
+          											<Fragment key={i}>
+          												<div
+          													className="ml-3 icon icon-lg icon-shape shadow-sm rounded-circle m-1" 
+                                    style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)' }}
+          													id={skill.skillName.replace(/\s/g, '')}
+          												>
+          													<Icon
+          														icon={
+          															skill.fontAwesomeClassname
+          														}
+          														data-inline="false"
+          													></Icon>
+          												</div>
+          												<UncontrolledTooltip
+          													delay={0}
+          													placement="bottom"
+          													target={skill.skillName.replace(/\s/g, '')}
+          												>
+          													{skill.skillName}
+          												</UncontrolledTooltip>
+          											</Fragment>
+          										);
+          									})}
+          					</>
+          				);
+          			})}
+          </div>
+              
+          <div>
+          {greetingsSkills.data.map((section, index) => {
+          				return (
+          					<>
+          									{section.softwareSkills2.map((skill, i) => {
+          										return (
+          											<Fragment key={i}>
+          												<div
+          													className="ml-3  icon icon-lg icon-shape shadow-sm rounded-circle m-1" 
+                                    style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)' }}
+          													id={skill.skillName.replace(/\s/g, '')}
+          												>
+          													<Icon
+          														icon={
+          															skill.fontAwesomeClassname
+          														}
+          														data-inline="false"
+          													></Icon>
+          												</div>
+          												<UncontrolledTooltip
+          													delay={0}
+          													placement="bottom"
+          													target={skill.skillName.replace(/\s/g, '')}
+          												>
+          													{skill.skillName}
+          												</UncontrolledTooltip>
+          											</Fragment>
+          										);
+          									})}
+          					</>
+          				);
+          			})}
+          </div>
+
                     <p className="lead text-white">{greetings.intro}</p>
-                    <p className="lead text-white">{greetings.technologies}</p>
-                  <SocialLinks />
                   <div className="btn-wrapper my-4">
                         <Button
                         className="btn-white btn-icon mb-3 mb-sm-0 ml-1"

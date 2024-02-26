@@ -142,18 +142,19 @@ return (
                     </NavLink>
                 </NavItem>
                 )}
-                {socialLinks.twitter && (
+                {socialLinks.gmail && (
                 <NavItem>
                     <NavLink
                     rel="noopener"
-                    aria-label="Twitter"
+                    aria-label="Email"
                     className="nav-link-icon"
-                    href={socialLinks.twitter}
+                    href={socialLinks.gmail}
+                    onClick={() => window.location.href = 'mailto:hjtrhodes@gmail.com'}
                     target="_blank"
                     >
                     <i><FaEnvelope /></i>
                     <span className="nav-link-inner--text d-lg-none ml-2">
-                        Twitter
+                        Email
                     </span>
                     </NavLink>
                 </NavItem>

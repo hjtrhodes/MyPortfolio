@@ -4,9 +4,50 @@ import emoji from "react-easy-emoji";
 export const greetings = {
   name: "Harry Rhodes",
   title: "Welcome to my Portfolio.",
-  intro: "I'm a Software Developer and graduate from Makers' Full Stack Software Development course. My languages are Javascript and Python. My main Tech Stack is React, Express, Node.js and MongoDB. I love React but am also highly adept with Python, Flask and PostgreSQL.",
-  technologies: "",
+  intro: "Hi, I'm Harry. I'm a Software Developer and graduate from Makers' Full Stack Software Development course. I love problem-solving, learning and understanding how things work!",
   CVLink: "https://docs.google.com/document/d/1WDQ-0gyIWZ4Quz8XPf9fVCJSYeT4G6iH9QUZh5Qx7nI/edit?usp=sharing",
+};
+
+export const greetingsSkills = {
+  data: [
+    {
+      softwareSkills1: [
+        {
+          skillName: "JavaScript",
+          fontAwesomeClassname: "logos:javascript",
+        },        
+        {
+          skillName: "React",
+          fontAwesomeClassname: "vscode-icons:file-type-reactjs",
+        },
+        {
+          skillName: "MongoDB",
+          fontAwesomeClassname: "logos:mongodb-icon",
+        },
+        {
+          skillName: "Nodejs",
+          fontAwesomeClassname: "logos:nodejs-icon",
+        }],
+        softwareSkills2: [
+        {
+          skillName: "Python",
+          fontAwesomeClassname: "logos:python",
+        },
+        {
+          skillName: "Flask",
+          fontAwesomeClassname: "logos:flask",
+        },
+        {
+          skillName: "PostgreSQL",
+          fontAwesomeClassname: "logos:postgresql",
+        },
+        {
+          skillName: "MySQL",
+          fontAwesomeClassname: "logos:mysql-icon",
+        },
+      ],
+    },
+  ],
 };
 
 export const openSource = {
@@ -23,7 +64,7 @@ export const socialLinks = {
 
 export const skillsSection = {
   title: "Technologies and Skills",
-  subTitle: " I love problem-solving, learning and understanding how things work! Below are some of my skills and the technologies I have experience with so far, but I code everyday and am constantly upskilling. Currently I'm deepening my knowledge of effective React development and working with Redux.",
+  subTitle: "Below are some of my skills and the technologies I have experience with so far, but I code everyday and am constantly upskilling. Currently I'm deepening my knowledge of effective React development and working with Redux.",
   data: [
     {
       title: "",
