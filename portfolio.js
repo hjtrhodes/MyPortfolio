@@ -23,7 +23,7 @@ export const socialLinks = {
 
 export const skillsSection = {
   title: "Technologies and Skills",
-  subTitle: " I love problem-solving, learning and understanding how things work! Below are some of my skills and the technologies I have experience with so far, but I code everyday and am constantly upskilling. Currently I'm continuing to work with React using Typescript.",
+  subTitle: " I love problem-solving, learning and understanding how things work! Below are some of my skills and the technologies I have experience with so far, but I code everyday and am constantly upskilling. Currently I'm deepening my knowledge of effective React development and working with Redux.",
   data: [
     {
       title: "",
