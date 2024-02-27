@@ -47,7 +47,7 @@ const Greetings = () => {
           										return (
           											<Fragment key={i}>
           												<div
-          													className="ml-3 icon icon-lg icon-shape shadow-sm rounded-circle m-1" 
+          													className="icon icon-lg icon-shape shadow-sm rounded-circle m-1" 
                                     style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)' }}
           													id={skill.skillName.replace(/\s/g, '')}
           												>

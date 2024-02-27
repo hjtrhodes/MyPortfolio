@@ -18,8 +18,12 @@ export const greetingsSkills = {
         },        
         {
           skillName: "React",
-          fontAwesomeClassname: "vscode-icons:file-type-reactjs",
+          fontAwesomeClassname: "logos:react",
         },
+        {
+          skillName: "Express",
+          fontAwesomeClassname: "devicon:express",
+        },  
         {
           skillName: "MongoDB",
           fontAwesomeClassname: "logos:mongodb-icon",
@@ -27,7 +31,12 @@ export const greetingsSkills = {
         {
           skillName: "Nodejs",
           fontAwesomeClassname: "logos:nodejs-icon",
+        },
+        {
+          skillName: "Jest",
+          fontAwesomeClassname: "logos:jest",
         }],
+        
         softwareSkills2: [
         {
           skillName: "Python",
@@ -42,8 +51,12 @@ export const greetingsSkills = {
           fontAwesomeClassname: "logos:postgresql",
         },
         {
-          skillName: "MySQL",
-          fontAwesomeClassname: "logos:mysql-icon",
+          skillName: "Pytest",
+          fontAwesomeClassname: "devicon:pytest",
+        },
+        {
+          skillName: "Cypress",
+          fontAwesomeClassname: "logos:cypress-icon",
         },
       ],
     },
@@ -97,7 +110,7 @@ export const skillsSection = {
         },
         {
           skillName: "React",
-          fontAwesomeClassname: "vscode-icons:file-type-reactjs",
+          fontAwesomeClassname: "logos:react",
         },
         {
           skillName: "Nodejs",
