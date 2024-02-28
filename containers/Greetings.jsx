@@ -36,7 +36,6 @@ const Greetings = () => {
               <Row>
                 <Col lg="6">
                   <h1 className="display-3 text-white">{greetings.title}</h1>
-                  <strong className="text-white">My Technologies:</strong>
                   <div>
                     {greetingsSkills.data.map((section, index) => {
                       return (
