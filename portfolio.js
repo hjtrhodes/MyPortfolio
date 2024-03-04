@@ -2,9 +2,9 @@ import emoji from "react-easy-emoji";
 
 export const greetings = {
   name: "Harry Rhodes",
-  title: "Welcome to my Portfolio.",
+  title: "Welcome to my portfolio.",
   intro:
-    "Hi, I'm Harry. I'm a Software Developer and graduate from Makers' Full Stack Software Development course. I love problem-solving, learning and understanding how things work!",
+    "I'm Harry, a Software Developer specialising in Javascript and React. I am also proficient with Python. I'm a graduate from Makers' Full Stack Software Development course who loves problem-solving, learning and understanding how things work!",
   CVLink:
     "https://docs.google.com/document/d/1WDQ-0gyIWZ4Quz8XPf9fVCJSYeT4G6iH9QUZh5Qx7nI/edit?usp=sharing",
 };
@@ -29,14 +29,6 @@ export const greetingsSkills = {
           skillName: "MongoDB",
           fontAwesomeClassname: "logos:mongodb-icon",
         },
-        // {
-        //   skillName: "Nodejs",
-        //   fontAwesomeClassname: "logos:nodejs-icon",
-        // },
-        // {
-        //   skillName: "Jest",
-        //   fontAwesomeClassname: "logos:jest",
-        // }
       ],
 
       softwareSkills2: [
@@ -56,14 +48,6 @@ export const greetingsSkills = {
           skillName: "PostgreSQL",
           fontAwesomeClassname: "logos:postgresql",
         },
-        // {
-        //   skillName: "Pytest",
-        //   fontAwesomeClassname: "devicon:pytest",
-        // },
-        // {
-        //   skillName: "Cypress",
-        //   fontAwesomeClassname: "logos:cypress-icon",
-        // },
       ],
     },
   ],
