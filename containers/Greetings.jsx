@@ -42,7 +42,7 @@ const Greetings = () => {
                         <>
                           {section.softwareSkills1.map((skill, i) => {
                             return (
-                              <Fragment key={i}>
+                              <Fragment key={`skill1-${i}`}>
                                 <div
                                   className="icon icon-lg icon-shape shadow-sm rounded-circle m-1"
                                   style={{
@@ -76,7 +76,7 @@ const Greetings = () => {
                         <>
                           {section.softwareSkills2.map((skill, i) => {
                             return (
-                              <Fragment key={i}>
+                              <Fragment key={`skill2-${i}`}>
                                 <div
                                   className="icon icon-lg icon-shape shadow-sm rounded-circle m-1"
                                   style={{
@@ -105,7 +105,7 @@ const Greetings = () => {
                   </div>
 
                   <p className="lead text-white">{greetings.intro}</p>
-                  <div className="btn-wrapper my-4">
+                  <div className="">
                     <Button
                       className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                       color="default"
