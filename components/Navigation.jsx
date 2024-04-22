@@ -38,6 +38,10 @@ const Navigation = () => {
     setCollapseKey((prevKey) => prevKey + 1);
   };
 
+  const updateNavMenu = () => {
+    setCollapseKey((prevKey) => prevKey + 1);
+  };
+
   return (
     <>
       <header className="header-global">
@@ -83,42 +87,6 @@ const Navigation = () => {
                 </Row>
               </div>
               <Nav className="align-items-lg-center ml-lg-auto" navbar>
-                {socialLinks.facebook && (
-                  <NavItem>
-                    <NavLink
-                      rel="noopener"
-                      aria-label="Facebook"
-                      className="nav-link-icon"
-                      href={socialLinks.facebook}
-                      target="_blank"
-                    >
-                      <i>
-                        <FaEnvelope />
-                      </i>
-                      <span className="nav-link-inner--text d-lg-none ml-2">
-                        Facebook
-                      </span>
-                    </NavLink>
-                  </NavItem>
-                )}
-                {socialLinks.instagram && (
-                  <NavItem>
-                    <NavLink
-                      rel="noopener"
-                      aria-label="Instagram"
-                      className="nav-link-icon"
-                      href={socialLinks.instagram}
-                      target="_blank"
-                    >
-                      <i>
-                        <FaEnvelope />
-                      </i>
-                      <span className="nav-link-inner--text d-lg-none ml-2">
-                        Instagram
-                      </span>
-                    </NavLink>
-                  </NavItem>
-                )}
                 {socialLinks.github && (
                   <NavItem>
                     <NavLink
@@ -127,6 +95,7 @@ const Navigation = () => {
                       className="nav-link-icon"
                       href={socialLinks.github}
                       target="_blank"
+                      onClick={updateNavMenu}
                     >
                       <i style={{ fontSize: "24px" }}>
                         <FaGithub />
@@ -145,6 +114,7 @@ const Navigation = () => {
                       className="nav-link-icon"
                       href={socialLinks.linkedin}
                       target="_blank"
+                      onClick={updateNavMenu}
                     >
                       <i style={{ fontSize: "24px" }}>
                         <FaLinkedin />
