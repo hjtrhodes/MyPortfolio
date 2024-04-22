@@ -31,6 +31,9 @@ const Navigation = () => {
   const scrollToEmailForm = () => {
     const emailForm = document.getElementById("emailForm");
     emailForm.scrollIntoView({ behavior: "smooth" });
+
+    // Toggle collapse state of the hamburger menu
+    setCollapseClasses(collapseClasses === "" ? "collapsing-out" : "");
   };
 
   return (
@@ -155,9 +158,10 @@ const Navigation = () => {
                       rel="noopener"
                       aria-label="Email"
                       className="nav-link-icon"
+                      href="#"
                       onClick={scrollToEmailForm}
                     >
-                      <i>
+                      <i style={{ fontSize: "24px" }}>
                         <FaEnvelope />
                       </i>
                       <span className="nav-link-inner--text d-lg-none ml-2">
