@@ -1,172 +1,178 @@
 import React, { useState, useEffect } from "react";
-import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'; // Import React Icons
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa"; // Import React Icons
 
 import { greetings, socialLinks } from "../portfolio";
 import Headroom from "headroom.js";
 import Link from "next/link";
 import {
-	UncontrolledCollapse,
-	NavbarBrand,
-	Navbar,
-	NavItem,
-	NavLink,
-	Nav,
-	Container,
-	Row,
-	Col,
+  UncontrolledCollapse,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container,
+  Row,
+  Col,
 } from "reactstrap";
 
 const Navigation = () => {
-const [collapseClasses, setCollapseClasses] = useState("");
-const onExiting = () => setCollapseClasses("collapsing-out");
+  const [collapseClasses, setCollapseClasses] = useState("");
+  const onExiting = () => setCollapseClasses("collapsing-out");
 
-const onExited = () => setCollapseClasses("");
+  const onExited = () => setCollapseClasses("");
 
-useEffect(() => {
+  useEffect(() => {
     let headroom = new Headroom(document.getElementById("navbar-main"));
     // initialise
     headroom.init();
-}, []);
+  }, []);
 
-return (
+  const scrollToEmailForm = () => {
+    const emailForm = document.getElementById("emailForm");
+    emailForm.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
     <>
-    <header className="header-global">
+      <header className="header-global">
         <Navbar
-        className="navbar-main navbar-transparent navbar-light headroom"
-        expand="lg"
-        id="navbar-main"
+          className="navbar-main navbar-transparent navbar-light headroom"
+          expand="lg"
+          id="navbar-main"
         >
-        <Container>
+          <Container>
             <NavbarBrand href="/" className="mr-lg-5">
-            <h2 className="text-white" id="nav-title">
+              <h2 className="text-white" id="nav-title">
                 {greetings.name}
-            </h2>
+              </h2>
             </NavbarBrand>
             <button
-            className="navbar-toggler"
-            aria-label="navbar_toggle"
-            id="navbar_global"
+              className="navbar-toggler"
+              aria-label="navbar_toggle"
+              id="navbar_global"
             >
-            <span className="navbar-toggler-icon" />
+              <span className="navbar-toggler-icon" />
             </button>
             <UncontrolledCollapse
-            toggler="#navbar_global"
-            navbar
-            className={collapseClasses}
-            onExiting={onExiting}
-            onExited={onExited}
+              toggler="#navbar_global"
+              navbar
+              className={collapseClasses}
+              onExiting={onExiting}
+              onExited={onExited}
             >
-            <div className="navbar-collapse-header">
+              <div className="navbar-collapse-header">
                 <Row>
-                <Col className="collapse-brand" xs="6">
+                  <Col className="collapse-brand" xs="6">
                     <h3 className="text-black" id="nav-title">
-                    {greetings.name}
+                      {greetings.name}
                     </h3>
-                </Col>
-                <Col className="collapse-close" xs="6">
-                    <button
-                    className="navbar-toggler"
-                    id="navbar_global"
-                    >
-                    <span />
-                    <span />
+                  </Col>
+                  <Col className="collapse-close" xs="6">
+                    <button className="navbar-toggler" id="navbar_global">
+                      <span />
+                      <span />
                     </button>
-                </Col>
+                  </Col>
                 </Row>
-            </div>
-            <Nav
-                className="align-items-lg-center ml-lg-auto"
-                navbar
-            >
+              </div>
+              <Nav className="align-items-lg-center ml-lg-auto" navbar>
                 {socialLinks.facebook && (
-                <NavItem>
+                  <NavItem>
                     <NavLink
-                    rel="noopener"
-                    aria-label="Facebook"
-                    className="nav-link-icon"
-                    href={socialLinks.facebook}
-                    target="_blank"
+                      rel="noopener"
+                      aria-label="Facebook"
+                      className="nav-link-icon"
+                      href={socialLinks.facebook}
+                      target="_blank"
                     >
-                    <i><FaEnvelope /></i>
-                    <span className="nav-link-inner--text d-lg-none ml-2">
+                      <i>
+                        <FaEnvelope />
+                      </i>
+                      <span className="nav-link-inner--text d-lg-none ml-2">
                         Facebook
-                    </span>
+                      </span>
                     </NavLink>
-                </NavItem>
+                  </NavItem>
                 )}
                 {socialLinks.instagram && (
-                <NavItem>
+                  <NavItem>
                     <NavLink
-                    rel="noopener"
-                    aria-label="Instagram"
-                    className="nav-link-icon"
-                    href={socialLinks.instagram}
-                    target="_blank"
+                      rel="noopener"
+                      aria-label="Instagram"
+                      className="nav-link-icon"
+                      href={socialLinks.instagram}
+                      target="_blank"
                     >
-                    <i><FaEnvelope /></i>
-                    <span className="nav-link-inner--text d-lg-none ml-2">
+                      <i>
+                        <FaEnvelope />
+                      </i>
+                      <span className="nav-link-inner--text d-lg-none ml-2">
                         Instagram
-                    </span>
+                      </span>
                     </NavLink>
-                </NavItem>
+                  </NavItem>
                 )}
                 {socialLinks.github && (
-                <NavItem>
+                  <NavItem>
                     <NavLink
-                    rel="noopener"
-                    aria-label="Github"
-                    className="nav-link-icon"
-                    href={socialLinks.github}
-                    target="_blank"
+                      rel="noopener"
+                      aria-label="Github"
+                      className="nav-link-icon"
+                      href={socialLinks.github}
+                      target="_blank"
                     >
-                    <i style={{ fontSize: '24px' }}><FaGithub /></i>
-                    <span className="nav-link-inner--text d-lg-none ml-2">
+                      <i style={{ fontSize: "24px" }}>
+                        <FaGithub />
+                      </i>
+                      <span className="nav-link-inner--text d-lg-none ml-2">
                         Github
-                    </span>
+                      </span>
                     </NavLink>
-                </NavItem>
+                  </NavItem>
                 )}
                 {socialLinks.linkedin && (
-                <NavItem>
+                  <NavItem>
                     <NavLink
-                    rel="noopener"
-                    aria-label="Linkedin"
-                    className="nav-link-icon"
-                    href={socialLinks.linkedin}
-                    target="_blank"
+                      rel="noopener"
+                      aria-label="Linkedin"
+                      className="nav-link-icon"
+                      href={socialLinks.linkedin}
+                      target="_blank"
                     >
-                    <i style={{ fontSize: '24px' }}><FaLinkedin /></i>
-                    <span className="nav-link-inner--text d-lg-none ml-2">
+                      <i style={{ fontSize: "24px" }}>
+                        <FaLinkedin />
+                      </i>
+                      <span className="nav-link-inner--text d-lg-none ml-2">
                         Linkedin
-                    </span>
+                      </span>
                     </NavLink>
-                </NavItem>
+                  </NavItem>
                 )}
                 {socialLinks.gmail && (
-                <NavItem>
+                  <NavItem>
                     <NavLink
-                    rel="noopener"
-                    aria-label="Email"
-                    className="nav-link-icon"
-                    href={socialLinks.gmail}
-                    onClick={() => window.location.href = 'mailto:hjtrhodes@gmail.com'}
-                    target="_blank"
+                      rel="noopener"
+                      aria-label="Email"
+                      className="nav-link-icon"
+                      onClick={scrollToEmailForm}
                     >
-                    <i><FaEnvelope /></i>
-                    <span className="nav-link-inner--text d-lg-none ml-2">
+                      <i>
+                        <FaEnvelope />
+                      </i>
+                      <span className="nav-link-inner--text d-lg-none ml-2">
                         Email
-                    </span>
+                      </span>
                     </NavLink>
-                </NavItem>
+                  </NavItem>
                 )}
-            </Nav>
+              </Nav>
             </UncontrolledCollapse>
-        </Container>
+          </Container>
         </Navbar>
-    </header>
+      </header>
     </>
-);
+  );
 };
 
 export default Navigation;
-

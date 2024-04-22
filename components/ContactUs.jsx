@@ -3,7 +3,7 @@ import classnames from "classnames";
 import Alert from "./Alerts";
 import { BsEnvelope } from "react-icons/bs";
 import { FaRunning, FaRegThumbsUp, FaRegThumbsDown } from "react-icons/fa";
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm, ValidationError } from "@formspree/react";
 
 import {
   Button,
@@ -37,7 +37,7 @@ export const ContactUs = () => {
 
   useEffect(() => {
     if (state.succeeded) {
-      setFormKey(prevKey => prevKey + 1); // <-- Increment key to force re-render
+      setFormKey((prevKey) => prevKey + 1); // <-- Increment key to force re-render
     }
   }, [state.succeeded, state.errors, state.submitting]);
 
@@ -48,7 +48,7 @@ export const ContactUs = () => {
 
   return (
     <>
-      <section className="section section-lg section-shaped">
+      <section className="section section-lg section-shaped" id="emailForm">
         <div className="shape shape-style-3 shape-primary">
           <span />
           <span />
@@ -73,14 +73,18 @@ export const ContactUs = () => {
             message={errorAlert.message}
           />
         )}
-        <form key={formKey} onSubmit={handleFormSubmit}> {/* <-- Use key prop for re-render */}
+        <form key={formKey} onSubmit={handleFormSubmit}>
+          {" "}
+          {/* <-- Use key prop for re-render */}
           <Container>
             <Row className="justify-content-center">
               <Col lg="8">
                 <Card className="bg-gradient-secondary shadow">
                   <CardBody className="p-lg-5">
-                    <h4 className="mb-1">Want to send me an email?</h4>
-                    <FormGroup className={classnames("mt-5", {})}>
+                    <h4 className="mb-1 text-center">
+                      Want to send me an email?
+                    </h4>
+                    <FormGroup className={classnames("mt-3", {})}>
                       <InputGroup className="input-group-alternative-focus-ring">
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
@@ -121,22 +125,28 @@ export const ContactUs = () => {
                         required
                       />
                     </FormGroup>
-                    <ValidationError 
-                      prefix="Email" 
+                    <ValidationError
+                      prefix="Email"
                       field="email"
                       errors={state.errors}
                     />
                     <div>
                       <Button
                         block
-                        className="btn-round"
+                        className="btn-round mb-3"
                         color="default"
                         size="lg"
                         type="submit"
                         disabled={state.submitting}
                       >
-                        {state.submitting ? 'Sending...' : 'Send Message'}
+                        {state.submitting ? "Sending..." : "Send Message"}
                       </Button>
+                      <p className="text-center">
+                        You can also email me directly at{" "}
+                        <span style={{ fontWeight: "bold", color: "#3b82f6" }}>
+                          hjtrhodes@gmail.com
+                        </span>
+                      </p>
                     </div>
                   </CardBody>
                 </Card>
@@ -150,4 +160,3 @@ export const ContactUs = () => {
 };
 
 export default ContactUs;
-
