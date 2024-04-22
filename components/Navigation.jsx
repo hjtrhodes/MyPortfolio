@@ -17,6 +17,8 @@ import {
 } from "reactstrap";
 
 const Navigation = () => {
+  // Add a state variable for the key prop
+  const [collapseKey, setCollapseKey] = useState(0);
   const [collapseClasses, setCollapseClasses] = useState("");
   const onExiting = () => setCollapseClasses("collapsing-out");
 
@@ -32,8 +34,8 @@ const Navigation = () => {
     const emailForm = document.getElementById("emailForm");
     emailForm.scrollIntoView({ behavior: "smooth" });
 
-    // Toggle collapse state of the hamburger menu
-    setCollapseClasses(collapseClasses === "" ? "collapsing-out" : "");
+    // Change the key prop to trigger a re-render of the UncontrolledCollapse component
+    setCollapseKey((prevKey) => prevKey + 1);
   };
 
   return (
@@ -58,6 +60,7 @@ const Navigation = () => {
               <span className="navbar-toggler-icon" />
             </button>
             <UncontrolledCollapse
+              key={collapseKey} // Add the key prop here
               toggler="#navbar_global"
               navbar
               className={collapseClasses}
