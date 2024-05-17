@@ -1,4 +1,4 @@
-import React, { useEffect, Fragment } from "react";
+import React, { useEffect, useState, Fragment } from "react";
 import { greetings } from "../portfolio";
 import dynamic from "next/dynamic";
 import { FiFileText } from "react-icons/fi";
@@ -19,6 +19,14 @@ const Greetings = () => {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
   });
+
+  const scrollToAboutMeForm = () => {
+    const aboutMeSection = document.getElementById("aboutMeSection");
+    if (aboutMeSection) {
+      aboutMeSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <main>
       <div className="position-relative">
@@ -110,12 +118,14 @@ const Greetings = () => {
                       className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                       color="default"
                       href={greetings.CVLink}
+                      aria-label="AboutMe"
+                      onClick={scrollToAboutMeForm}
                     >
                       <span className="btn-inner--icon mr-1">
                         <FiFileText />
                       </span>
                       <span className="btn-inner--text">
-                        Click to see my CV
+                        Click to find out more about me
                       </span>
                     </Button>
                   </div>

@@ -6,7 +6,7 @@ export const greetings = {
   intro:
     "I'm Harry, a Software Engineer at Abstract Leap in Oxford. I specialise in C#, .NET, ASP.NET and Azure. I'm a graduate from Makers' Full Stack Software Development course who loves problem-solving, learning and understanding how things work!",
   CVLink:
-    "https://docs.google.com/document/d/1WDQ-0gyIWZ4Quz8XPf9fVCJSYeT4G6iH9QUZh5Qx7nI/edit?usp=sharing",
+    "",
 };
 
 export const greetingsSkills = {

@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Education = () => {
   return (
     educationInfo && (
-      <section className="section pb-5 bg-gradient-info my-5">
+      <section section id="aboutMeSection" className="section pb-5 bg-gradient-info my-5">
         <Container>
           <div className="d-flex px-3">
             <div>
