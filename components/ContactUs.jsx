@@ -141,12 +141,6 @@ export const ContactUs = () => {
                       >
                         {state.submitting ? "Sending..." : "Send Message"}
                       </Button>
-                      <p className="text-center">
-                        You can also email me directly at{" "}
-                        <span style={{ fontWeight: "bold", color: "#3b82f6" }}>
-                          hjtrhodes@gmail.com
-                        </span>
-                      </p>
                     </div>
                   </CardBody>
                 </Card>
